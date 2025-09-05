@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Saleling.Model\Saleling.Model.csproj" />
+    <ProjectReference Include="..\Saleling.Repository\Saleling.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
