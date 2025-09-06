@@ -25,5 +25,10 @@ namespace Saleling.UI
             form.Show();
             this.Hide();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

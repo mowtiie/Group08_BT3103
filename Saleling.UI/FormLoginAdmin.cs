@@ -30,5 +30,15 @@ namespace Saleling.UI
             form.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+       
+        }
     }
 }
