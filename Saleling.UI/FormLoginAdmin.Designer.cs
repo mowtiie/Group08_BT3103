@@ -119,7 +119,7 @@
             button2.BackColor = Color.Silver;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(1332, 544);
+            button2.Location = new Point(1332, 546);
             button2.Name = "button2";
             button2.Size = new Size(138, 45);
             button2.TabIndex = 13;

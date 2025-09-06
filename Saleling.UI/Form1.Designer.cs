@@ -97,7 +97,7 @@
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(1341, 3);
+            button3.Location = new Point(1331, 12);
             button3.Name = "button3";
             button3.Size = new Size(139, 51);
             button3.TabIndex = 6;

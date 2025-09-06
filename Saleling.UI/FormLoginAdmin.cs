@@ -15,6 +15,8 @@ namespace Saleling.UI
         public FormLoginAdmin()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
         private void label3_Click(object sender, EventArgs e)

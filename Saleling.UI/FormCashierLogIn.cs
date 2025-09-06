@@ -15,6 +15,8 @@ namespace Saleling.UI
         public FormCashierLogIn()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
