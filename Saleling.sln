@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22 d17.14
+VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saleling.UI", "Saleling.UI\Saleling.UI.csproj", "{3C5EABCC-CCC9-4BAF-AAD1-8FBDFCD30593}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saleling.Controller", "Saleling.Controller\Saleling.Controller.csproj", "{F05AF2BC-6540-4579-A605-E3902C3DA3AB}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Saleling.DB", "Saleling.DB\Saleling.DB.sqlproj", "{4CCC78BA-5204-4DFE-B73E-A1A6015C5DA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saleling.Util", "Saleling.Util\Saleling.Util.csproj", "{8AC4F43A-8107-4560-8423-343D05A4AEF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{4CCC78BA-5204-4DFE-B73E-A1A6015C5DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CCC78BA-5204-4DFE-B73E-A1A6015C5DA3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4CCC78BA-5204-4DFE-B73E-A1A6015C5DA3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8AC4F43A-8107-4560-8423-343D05A4AEF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AC4F43A-8107-4560-8423-343D05A4AEF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AC4F43A-8107-4560-8423-343D05A4AEF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AC4F43A-8107-4560-8423-343D05A4AEF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

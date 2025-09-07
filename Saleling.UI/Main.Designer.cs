@@ -1,6 +1,6 @@
 ﻿namespace Saleling.UI
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            button1 = new Button();
-            button3 = new Button();
-            button2 = new Button();
+            btn_admin = new Button();
+            btn_exit = new Button();
+            btn_cashier = new Button();
             label2 = new Label();
             SuspendLayout();
             // 
@@ -47,40 +47,40 @@
             label1.TabIndex = 1;
             label1.Text = "Saleling";
             // 
-            // button1
+            // btn_admin
             // 
-            button1.BackColor = Color.White;
-            button1.Font = new Font("Lucida Fax", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.ControlText;
-            button1.Location = new Point(267, 276);
-            button1.Name = "button1";
-            button1.Size = new Size(194, 78);
-            button1.TabIndex = 2;
-            button1.Text = "Admin";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btn_admin.BackColor = Color.White;
+            btn_admin.Font = new Font("Lucida Fax", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_admin.ForeColor = SystemColors.ControlText;
+            btn_admin.Location = new Point(267, 276);
+            btn_admin.Name = "btn_admin";
+            btn_admin.Size = new Size(194, 78);
+            btn_admin.TabIndex = 2;
+            btn_admin.Text = "Admin";
+            btn_admin.UseVisualStyleBackColor = false;
+            btn_admin.Click += btn_admin_Click;
             // 
-            // button3
+            // btn_exit
             // 
-            button3.Location = new Point(12, 562);
-            button3.Name = "button3";
-            button3.Size = new Size(94, 29);
-            button3.TabIndex = 4;
-            button3.Text = "Exit";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            btn_exit.Location = new Point(12, 562);
+            btn_exit.Name = "btn_exit";
+            btn_exit.Size = new Size(94, 29);
+            btn_exit.TabIndex = 4;
+            btn_exit.Text = "Exit";
+            btn_exit.UseVisualStyleBackColor = true;
+            btn_exit.Click += btn_exit_Click;
             // 
-            // button2
+            // btn_cashier
             // 
-            button2.BackColor = Color.White;
-            button2.Font = new Font("Lucida Fax", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(267, 383);
-            button2.Name = "button2";
-            button2.Size = new Size(194, 78);
-            button2.TabIndex = 5;
-            button2.Text = "Cahier";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            btn_cashier.BackColor = Color.White;
+            btn_cashier.Font = new Font("Lucida Fax", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_cashier.Location = new Point(267, 383);
+            btn_cashier.Name = "btn_cashier";
+            btn_cashier.Size = new Size(194, 78);
+            btn_cashier.TabIndex = 5;
+            btn_cashier.Text = "Cahier";
+            btn_cashier.UseVisualStyleBackColor = false;
+            btn_cashier.Click += btn_cashier_Click;
             // 
             // label2
             // 
@@ -93,7 +93,7 @@
             label2.TabIndex = 6;
             label2.Text = "Choose Your Account";
             // 
-            // Form1
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -102,22 +102,22 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1482, 603);
             Controls.Add(label2);
-            Controls.Add(button2);
-            Controls.Add(button3);
-            Controls.Add(button1);
+            Controls.Add(btn_cashier);
+            Controls.Add(btn_exit);
+            Controls.Add(btn_admin);
             Controls.Add(label1);
-            Name = "Form1";
+            Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Saleling";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
         private Label label1;
-        private Button button1;
-        private Button button3;
-        private Button button2;
+        private Button btn_admin;
+        private Button btn_exit;
+        private Button btn_cashier;
         private Label label2;
     }
 }

@@ -10,20 +10,21 @@ using System.Windows.Forms;
 
 namespace Saleling.UI
 {
-    public partial class cashierlogin : Form
+    public partial class CashierDashboard : Form
     {
-        public cashierlogin()
+        public CashierDashboard()
         {
             InitializeComponent();
-            this.MaximizeBox = false;
+
             this.MinimizeBox = false;
+            this.MaximizeBox = false;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_logout_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
-            form1.Show();
             this.Hide();
+            Main mainForm = new Main();
+            mainForm.ShowDialog();
         }
     }
 }

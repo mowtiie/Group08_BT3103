@@ -10,25 +10,21 @@ using System.Windows.Forms;
 
 namespace Saleling.UI
 {
-    public partial class adminlogin : Form
+    public partial class AdminDashboard : Form
     {
-        public adminlogin()
+        public AdminDashboard()
         {
             InitializeComponent();
-            this.MaximizeBox = false;
+
             this.MinimizeBox = false;
+            this.MaximizeBox = false;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_logout_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
-            form.Show();
             this.Hide();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
+            Main mainForm = new Main();
+            mainForm.ShowDialog();
         }
     }
 }
