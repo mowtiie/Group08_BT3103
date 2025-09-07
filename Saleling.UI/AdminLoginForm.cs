@@ -43,13 +43,13 @@ namespace Saleling.UI
                 UserModel matchingUser = userController.ValidateAdmin(adminUsernameInput, adminPasswordInput);
                 if (matchingUser != null)
                 {
-                    this.DialogResult = DialogResult.OK;
-                    this.Close();
-                    MessageBox.Show("Login Successful");
+                    this.Hide();                    
+                    AdminDashboard adminDashboard = new AdminDashboard();
+                    adminDashboard.ShowDialog();
                 }
                 else
                 {
-                    throw new Exception("The submitted credentials are invalid,");
+                    throw new Exception("The submitted credentials are invalid.");
                 }
             }
             catch (Exception ex)

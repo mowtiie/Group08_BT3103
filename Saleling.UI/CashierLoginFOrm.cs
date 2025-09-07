@@ -36,13 +36,13 @@ namespace Saleling.UI
                 UserModel matchingUser = userController.ValidateCashier(cashierUsernameInput, cashierPasswordInput);
                 if (matchingUser != null)
                 {
-                    this.DialogResult = DialogResult.OK;
-                    this.Close();
-                    MessageBox.Show("Login Successful");
+                    this.Hide();
+                    CashierDashboard cashierDashboard = new CashierDashboard();
+                    cashierDashboard.ShowDialog();
                 }
                 else
                 {
-                    throw new Exception("The submitted credentials are invalid,");
+                    throw new Exception("The submitted credentials are invalid.");
                 }
             }
             catch (Exception ex)
