@@ -1,6 +1,6 @@
 ﻿namespace Saleling.UI
 {
-    partial class MainForm
+    partial class Main
     {
         /// <summary>
         ///  Required designer variable.

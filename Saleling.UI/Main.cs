@@ -1,8 +1,8 @@
 namespace Saleling.UI
 {
-    public partial class MainForm : Form
+    public partial class Main : Form
     {
-        public MainForm()
+        public Main()
         {
             InitializeComponent();
             this.MaximizeBox = false;
@@ -11,21 +11,21 @@ namespace Saleling.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AdminLoginForm form = new AdminLoginForm();
+            AdminLogin form = new AdminLogin();
             form.Show();
         }
 
         private void btn_admin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AdminLoginForm adminLoginForm = new AdminLoginForm();
+            AdminLogin adminLoginForm = new AdminLogin();
             adminLoginForm.ShowDialog();
         }
 
         private void btn_cashier_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CashierLoginForm cashierLoginForm = new CashierLoginForm();
+            CashierLogin cashierLoginForm = new CashierLogin();
             cashierLoginForm.ShowDialog();
         }
 

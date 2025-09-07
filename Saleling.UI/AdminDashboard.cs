@@ -23,7 +23,7 @@ namespace Saleling.UI
         private void btn_logout_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MainForm mainForm = new MainForm();
+            Main mainForm = new Main();
             mainForm.ShowDialog();
         }
     }

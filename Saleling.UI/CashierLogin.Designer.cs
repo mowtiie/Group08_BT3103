@@ -1,6 +1,6 @@
 ﻿namespace Saleling.UI
 {
-    partial class CashierLoginForm
+    partial class CashierLogin
     {
         /// <summary>
         /// Required designer variable.

@@ -12,11 +12,11 @@ using System.Windows.Forms;
 
 namespace Saleling.UI
 {
-    public partial class CashierLoginForm : Form
+    public partial class CashierLogin : Form
     {
         private readonly UserController userController;
 
-        public CashierLoginForm()
+        public CashierLogin()
         {
             InitializeComponent();
 
@@ -54,7 +54,7 @@ namespace Saleling.UI
         private void btn_back_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MainForm mainForm = new MainForm();
+            Main mainForm = new Main();
             mainForm.ShowDialog();
         }
 

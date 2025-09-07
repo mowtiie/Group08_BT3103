@@ -12,11 +12,11 @@ using System.Windows.Forms;
 
 namespace Saleling.UI
 {
-    public partial class AdminLoginForm : Form
+    public partial class AdminLogin : Form
     {
         private readonly UserController userController;
 
-        public AdminLoginForm()
+        public AdminLogin()
         {
             InitializeComponent();
 
@@ -29,7 +29,7 @@ namespace Saleling.UI
         private void btn_back_Click(object sender, EventArgs e)
         {
             this.Close();
-            MainForm mainForm = new MainForm();
+            Main mainForm = new Main();
             mainForm.ShowDialog();
         }
 
