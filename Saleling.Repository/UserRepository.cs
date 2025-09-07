@@ -5,8 +5,6 @@ using System.Data.SqlClient;
 
 namespace Saleling.Repository
 {
-    public delegate UserModel ValidateUserDelegate(string Username, string Password);
-
     public class UserRepository
     {
         private readonly string connectionString;

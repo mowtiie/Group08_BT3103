@@ -45,6 +45,7 @@
             btn_login.TabIndex = 0;
             btn_login.Text = "LOGIN";
             btn_login.UseVisualStyleBackColor = true;
+            btn_login.Click += btn_login_Click;
             // 
             // field_username
             // 
