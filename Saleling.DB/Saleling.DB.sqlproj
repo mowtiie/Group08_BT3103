@@ -57,8 +57,16 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Scripts" />
+    <Folder Include="Tables" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Initial Data.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Admin.sql" />
+    <Build Include="Tables\Cashier.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Saleling.DB.refactorlog" />
   </ItemGroup>
 </Project>
