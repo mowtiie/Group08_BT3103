@@ -53,9 +53,14 @@ namespace Saleling.UI
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             MainForm mainForm = new MainForm();
             mainForm.ShowDialog();
+        }
+
+        private void checkbox_show_password_CheckedChanged(object sender, EventArgs e)
+        {
+            field_password.UseSystemPasswordChar = checkbox_show_password.Checked;
         }
     }
 }

@@ -35,16 +35,21 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
+            checkbox_show_password = new CheckBox();
             SuspendLayout();
             // 
             // btn_login
             // 
-            btn_login.Location = new Point(187, 323);
+            btn_login.BackColor = SystemColors.HotTrack;
+            btn_login.FlatAppearance.BorderSize = 0;
+            btn_login.FlatStyle = FlatStyle.Flat;
+            btn_login.ForeColor = Color.White;
+            btn_login.Location = new Point(86, 374);
             btn_login.Name = "btn_login";
-            btn_login.Size = new Size(150, 49);
+            btn_login.Size = new Size(360, 49);
             btn_login.TabIndex = 0;
             btn_login.Text = "LOGIN";
-            btn_login.UseVisualStyleBackColor = true;
+            btn_login.UseVisualStyleBackColor = false;
             btn_login.Click += btn_login_Click;
             // 
             // field_username
@@ -62,14 +67,17 @@
             field_password.Location = new Point(86, 231);
             field_password.Multiline = true;
             field_password.Name = "field_password";
+            field_password.PasswordChar = '*';
             field_password.Size = new Size(360, 54);
             field_password.TabIndex = 2;
             // 
             // btn_back
             // 
-            btn_back.Location = new Point(212, 385);
+            btn_back.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 64);
+            btn_back.FlatAppearance.BorderSize = 10;
+            btn_back.Location = new Point(86, 438);
             btn_back.Name = "btn_back";
-            btn_back.Size = new Size(106, 29);
+            btn_back.Size = new Size(360, 49);
             btn_back.TabIndex = 3;
             btn_back.Text = "Back";
             btn_back.UseVisualStyleBackColor = true;
@@ -105,12 +113,25 @@
             label3.TabIndex = 6;
             label3.Text = "Welcome Back! Admin";
             // 
+            // checkbox_show_password
+            // 
+            checkbox_show_password.AutoSize = true;
+            checkbox_show_password.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            checkbox_show_password.Location = new Point(86, 301);
+            checkbox_show_password.Name = "checkbox_show_password";
+            checkbox_show_password.Size = new Size(132, 24);
+            checkbox_show_password.TabIndex = 7;
+            checkbox_show_password.Text = "Show Password";
+            checkbox_show_password.UseVisualStyleBackColor = true;
+            checkbox_show_password.CheckedChanged += checkbox_show_password_CheckedChanged;
+            // 
             // AdminLoginForm
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
-            ClientSize = new Size(540, 428);
+            ClientSize = new Size(540, 508);
+            Controls.Add(checkbox_show_password);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -135,5 +156,6 @@
         private Label label1;
         private Label label2;
         private Label label3;
+        private CheckBox checkbox_show_password;
     }
 }

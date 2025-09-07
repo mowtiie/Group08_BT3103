@@ -57,5 +57,10 @@ namespace Saleling.UI
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void checkbox_show_password_CheckedChanged(object sender, EventArgs e)
+        {
+            field_password.UseSystemPasswordChar = checkbox_show_password.Checked;
+        }
     }
 }
