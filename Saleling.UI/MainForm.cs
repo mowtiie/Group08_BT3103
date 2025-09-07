@@ -25,7 +25,7 @@ namespace Saleling.UI
         private void btn_cashier_Click(object sender, EventArgs e)
         {
             this.Hide();
-            cashierlogin cashierLoginForm = new cashierlogin();
+            CashierLoginForm cashierLoginForm = new CashierLoginForm();
             cashierLoginForm.ShowDialog();
         }
 

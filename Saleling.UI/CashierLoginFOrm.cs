@@ -10,13 +10,18 @@ using System.Windows.Forms;
 
 namespace Saleling.UI
 {
-    public partial class cashierlogin : Form
+    public partial class CashierLoginForm : Form
     {
-        public cashierlogin()
+        public CashierLoginForm()
         {
             InitializeComponent();
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+        }
+
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            // Do login operation
         }
 
         private void btn_back_Click(object sender, EventArgs e)
