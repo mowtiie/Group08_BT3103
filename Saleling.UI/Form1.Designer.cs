@@ -45,15 +45,9 @@
             label13 = new Label();
             label12 = new Label();
             label4 = new Label();
-            panel5 = new Panel();
-            label17 = new Label();
-            label16 = new Label();
-            label15 = new Label();
-            label5 = new Label();
             button1 = new Button();
             label18 = new Label();
             dashboardToolStripMenuItem = new ToolStripMenuItem();
-            usersToolStripMenuItem = new ToolStripMenuItem();
             productsToolStripMenuItem = new ToolStripMenuItem();
             inventoryToolStripMenuItem = new ToolStripMenuItem();
             salesToolStripMenuItem = new ToolStripMenuItem();
@@ -80,10 +74,6 @@
             label26 = new Label();
             label30 = new Label();
             label25 = new Label();
-            panel8 = new Panel();
-            label35 = new Label();
-            label34 = new Label();
-            button4 = new Button();
             label38 = new Label();
             panel9 = new Panel();
             label36 = new Label();
@@ -101,11 +91,9 @@
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
-            panel5.SuspendLayout();
             menuStrip1.SuspendLayout();
             panel6.SuspendLayout();
             panel7.SuspendLayout();
-            panel8.SuspendLayout();
             panel9.SuspendLayout();
             panel10.SuspendLayout();
             panel11.SuspendLayout();
@@ -140,7 +128,7 @@
             panel2.Controls.Add(label2);
             panel2.Location = new Point(12, 108);
             panel2.Name = "panel2";
-            panel2.Size = new Size(350, 159);
+            panel2.Size = new Size(475, 159);
             panel2.TabIndex = 2;
             panel2.Paint += panel2_Paint;
             // 
@@ -148,7 +136,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(116, 121);
+            label8.Location = new Point(177, 121);
             label8.Name = "label8";
             label8.Size = new Size(108, 20);
             label8.TabIndex = 3;
@@ -158,7 +146,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(116, 76);
+            label7.Location = new Point(177, 76);
             label7.Name = "label7";
             label7.Size = new Size(104, 25);
             label7.TabIndex = 2;
@@ -168,7 +156,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(120, 35);
+            label6.Location = new Point(181, 35);
             label6.Name = "label6";
             label6.Size = new Size(100, 20);
             label6.TabIndex = 1;
@@ -177,7 +165,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(15, 92);
+            label2.Location = new Point(76, 92);
             label2.Name = "label2";
             label2.Size = new Size(315, 20);
             label2.TabIndex = 0;
@@ -191,16 +179,16 @@
             panel3.Controls.Add(label10);
             panel3.Controls.Add(label9);
             panel3.Controls.Add(label3);
-            panel3.Location = new Point(380, 108);
+            panel3.Location = new Point(495, 108);
             panel3.Name = "panel3";
-            panel3.Size = new Size(350, 159);
+            panel3.Size = new Size(475, 159);
             panel3.TabIndex = 3;
             // 
             // label11
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label11.Location = new Point(131, 121);
+            label11.Location = new Point(198, 121);
             label11.Name = "label11";
             label11.Size = new Size(98, 20);
             label11.TabIndex = 4;
@@ -210,7 +198,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(155, 76);
+            label10.Location = new Point(222, 76);
             label10.Name = "label10";
             label10.Size = new Size(42, 25);
             label10.TabIndex = 4;
@@ -220,7 +208,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(119, 35);
+            label9.Location = new Point(186, 35);
             label9.Name = "label9";
             label9.Size = new Size(110, 20);
             label9.TabIndex = 4;
@@ -229,7 +217,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(18, 92);
+            label3.Location = new Point(85, 92);
             label3.Name = "label3";
             label3.Size = new Size(315, 20);
             label3.TabIndex = 1;
@@ -243,16 +231,16 @@
             panel4.Controls.Add(label13);
             panel4.Controls.Add(label12);
             panel4.Controls.Add(label4);
-            panel4.Location = new Point(750, 108);
+            panel4.Location = new Point(980, 108);
             panel4.Name = "panel4";
-            panel4.Size = new Size(350, 159);
+            panel4.Size = new Size(475, 159);
             panel4.TabIndex = 4;
             // 
             // label14
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label14.Location = new Point(119, 121);
+            label14.Location = new Point(195, 121);
             label14.Name = "label14";
             label14.Size = new Size(99, 20);
             label14.TabIndex = 5;
@@ -263,7 +251,7 @@
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label13.ForeColor = Color.Gold;
-            label13.Location = new Point(148, 76);
+            label13.Location = new Point(224, 76);
             label13.Name = "label13";
             label13.Size = new Size(32, 25);
             label13.TabIndex = 5;
@@ -273,7 +261,7 @@
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.Location = new Point(107, 35);
+            label12.Location = new Point(183, 35);
             label12.Name = "label12";
             label12.Size = new Size(126, 20);
             label12.TabIndex = 5;
@@ -282,64 +270,11 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(19, 92);
+            label4.Location = new Point(95, 92);
             label4.Name = "label4";
             label4.Size = new Size(315, 20);
             label4.TabIndex = 2;
             label4.Text = "___________________________________________________";
-            // 
-            // panel5
-            // 
-            panel5.BackColor = Color.FromArgb(241, 228, 243);
-            panel5.BorderStyle = BorderStyle.FixedSingle;
-            panel5.Controls.Add(label17);
-            panel5.Controls.Add(label16);
-            panel5.Controls.Add(label15);
-            panel5.Controls.Add(label5);
-            panel5.Location = new Point(1120, 108);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(350, 159);
-            panel5.TabIndex = 3;
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label17.Location = new Point(108, 121);
-            label17.Name = "label17";
-            label17.Size = new Size(123, 20);
-            label17.TabIndex = 6;
-            label17.Text = "2 currently online";
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label16.ForeColor = Color.Black;
-            label16.Location = new Point(152, 76);
-            label16.Name = "label16";
-            label16.Size = new Size(22, 25);
-            label16.TabIndex = 6;
-            label16.Text = "8";
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label15.Location = new Point(116, 35);
-            label15.Name = "label15";
-            label15.Size = new Size(96, 20);
-            label15.TabIndex = 6;
-            label15.Text = "Active Users";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(18, 92);
-            label5.Name = "label5";
-            label5.Size = new Size(315, 20);
-            label5.TabIndex = 3;
-            label5.Text = "___________________________________________________";
             // 
             // button1
             // 
@@ -373,13 +308,6 @@
             dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
             dashboardToolStripMenuItem.Size = new Size(96, 24);
             dashboardToolStripMenuItem.Text = "Dashboard";
-            // 
-            // usersToolStripMenuItem
-            // 
-            usersToolStripMenuItem.ForeColor = SystemColors.Control;
-            usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            usersToolStripMenuItem.Size = new Size(58, 24);
-            usersToolStripMenuItem.Text = "Users";
             // 
             // productsToolStripMenuItem
             // 
@@ -428,7 +356,7 @@
             // 
             menuStrip1.BackColor = Color.Black;
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { dashboardToolStripMenuItem, usersToolStripMenuItem, productsToolStripMenuItem, inventoryToolStripMenuItem, salesToolStripMenuItem, reportsToolStripMenuItem, settingsToolStripMenuItem, logoutToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { dashboardToolStripMenuItem, productsToolStripMenuItem, inventoryToolStripMenuItem, salesToolStripMenuItem, reportsToolStripMenuItem, settingsToolStripMenuItem, logoutToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1482, 28);
@@ -662,49 +590,6 @@
             label25.TabIndex = 12;
             label25.Text = "Recent Transactions\r\n";
             // 
-            // panel8
-            // 
-            panel8.BackColor = Color.White;
-            panel8.BorderStyle = BorderStyle.FixedSingle;
-            panel8.Controls.Add(label35);
-            panel8.Controls.Add(label34);
-            panel8.Controls.Add(button4);
-            panel8.Location = new Point(12, 533);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(350, 159);
-            panel8.TabIndex = 4;
-            // 
-            // label35
-            // 
-            label35.AutoSize = true;
-            label35.Location = new Point(15, 68);
-            label35.Name = "label35";
-            label35.Size = new Size(221, 20);
-            label35.TabIndex = 2;
-            label35.Text = "Manage user accounts and roles";
-            // 
-            // label34
-            // 
-            label34.AutoSize = true;
-            label34.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label34.Location = new Point(15, 14);
-            label34.Name = "label34";
-            label34.Size = new Size(138, 20);
-            label34.TabIndex = 1;
-            label34.Text = "User Management";
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.LightGray;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(15, 114);
-            button4.Name = "button4";
-            button4.Size = new Size(114, 31);
-            button4.TabIndex = 0;
-            button4.Text = "Manage Users";
-            button4.UseVisualStyleBackColor = false;
-            // 
             // label38
             // 
             label38.AutoSize = true;
@@ -724,9 +609,9 @@
             panel9.Controls.Add(label36);
             panel9.Controls.Add(label37);
             panel9.Controls.Add(button5);
-            panel9.Location = new Point(380, 533);
+            panel9.Location = new Point(12, 533);
             panel9.Name = "panel9";
-            panel9.Size = new Size(350, 159);
+            panel9.Size = new Size(475, 159);
             panel9.TabIndex = 5;
             // 
             // label36
@@ -767,9 +652,9 @@
             panel10.Controls.Add(label39);
             panel10.Controls.Add(label40);
             panel10.Controls.Add(button6);
-            panel10.Location = new Point(750, 533);
+            panel10.Location = new Point(495, 533);
             panel10.Name = "panel10";
-            panel10.Size = new Size(350, 159);
+            panel10.Size = new Size(475, 159);
             panel10.TabIndex = 6;
             // 
             // label39
@@ -810,9 +695,9 @@
             panel11.Controls.Add(label41);
             panel11.Controls.Add(label42);
             panel11.Controls.Add(button7);
-            panel11.Location = new Point(1118, 533);
+            panel11.Location = new Point(980, 533);
             panel11.Name = "panel11";
-            panel11.Size = new Size(350, 159);
+            panel11.Size = new Size(488, 159);
             panel11.TabIndex = 7;
             // 
             // label41
@@ -857,12 +742,10 @@
             Controls.Add(panel10);
             Controls.Add(panel9);
             Controls.Add(label38);
-            Controls.Add(panel8);
             Controls.Add(label25);
             Controls.Add(panel7);
             Controls.Add(panel6);
             Controls.Add(label18);
-            Controls.Add(panel5);
             Controls.Add(panel4);
             Controls.Add(panel3);
             Controls.Add(panel2);
@@ -880,16 +763,12 @@
             panel3.PerformLayout();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
-            panel8.ResumeLayout(false);
-            panel8.PerformLayout();
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
             panel10.ResumeLayout(false);
@@ -909,24 +788,18 @@
         private Label label7;
         private Label label6;
         private Panel panel4;
-        private Panel panel5;
         private Label label8;
         private Label label3;
         private Label label4;
-        private Label label5;
         private Label label11;
         private Label label10;
         private Label label9;
         private Label label13;
         private Label label12;
         private Label label14;
-        private Label label17;
-        private Label label16;
-        private Label label15;
         private Button button1;
         private Label label18;
         private ToolStripMenuItem dashboardToolStripMenuItem;
-        private ToolStripMenuItem usersToolStripMenuItem;
         private ToolStripMenuItem productsToolStripMenuItem;
         private ToolStripMenuItem inventoryToolStripMenuItem;
         private ToolStripMenuItem salesToolStripMenuItem;
@@ -953,10 +826,6 @@
         private Label label29;
         private Label label30;
         private Label label33;
-        private Panel panel8;
-        private Label label35;
-        private Label label34;
-        private Button button4;
         private Label label38;
         private Panel panel9;
         private Label label36;
