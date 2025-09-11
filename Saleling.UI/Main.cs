@@ -9,11 +9,6 @@ namespace Saleling.UI
             this.MinimizeBox = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            AdminLogin form = new AdminLogin();
-            form.Show();
-        }
 
         private void btn_admin_Click(object sender, EventArgs e)
         {
