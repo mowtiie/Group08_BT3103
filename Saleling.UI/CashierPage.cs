@@ -16,8 +16,16 @@ namespace Saleling.UI
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
+            this.IsMdiContainer = true;
             this.MinimizeBox = false;
             this.MaximizeBox = false;
+        }
+
+        private void CashierPage_Load(object sender, EventArgs e)
+        {
+            CashierDashboard cashierDashboard = new CashierDashboard();
+            cashierDashboard.MdiParent = this;
+            cashierDashboard.Show();
         }
     }
 }

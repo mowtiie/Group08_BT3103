@@ -30,9 +30,9 @@
         {
             menuCashier = new MenuStrip();
             menuItemDashboard = new ToolStripMenuItem();
+            menuItemPOS = new ToolStripMenuItem();
             menuItemProducts = new ToolStripMenuItem();
             menuItemTransactions = new ToolStripMenuItem();
-            menuItemPOS = new ToolStripMenuItem();
             menuItemReports = new ToolStripMenuItem();
             menuItemLogout = new ToolStripMenuItem();
             menuCashier.SuspendLayout();
@@ -56,6 +56,13 @@
             menuItemDashboard.Size = new Size(124, 32);
             menuItemDashboard.Text = "Dashboard";
             // 
+            // menuItemPOS
+            // 
+            menuItemPOS.ForeColor = SystemColors.Control;
+            menuItemPOS.Name = "menuItemPOS";
+            menuItemPOS.Size = new Size(64, 32);
+            menuItemPOS.Text = "POS";
+            // 
             // menuItemProducts
             // 
             menuItemProducts.ForeColor = SystemColors.Control;
@@ -69,13 +76,6 @@
             menuItemTransactions.Name = "menuItemTransactions";
             menuItemTransactions.Size = new Size(137, 32);
             menuItemTransactions.Text = "Transactions";
-            // 
-            // menuItemPOS
-            // 
-            menuItemPOS.ForeColor = SystemColors.Control;
-            menuItemPOS.Name = "menuItemPOS";
-            menuItemPOS.Size = new Size(64, 32);
-            menuItemPOS.Text = "POS";
             // 
             // menuItemReports
             // 
@@ -101,6 +101,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "CashierPage";
             Text = "Cashier Dashboard";
+            Load += CashierPage_Load;
             menuCashier.ResumeLayout(false);
             menuCashier.PerformLayout();
             ResumeLayout(false);
