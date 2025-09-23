@@ -458,7 +458,7 @@
             dataGridView1.Location = new Point(12, 782);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1882, 229);
+            dataGridView1.Size = new Size(1891, 232);
             dataGridView1.TabIndex = 26;
             // 
             // CashierDashboard
