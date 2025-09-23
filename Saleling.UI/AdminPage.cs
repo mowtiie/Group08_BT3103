@@ -16,15 +16,9 @@ namespace Saleling.UI
         {
             InitializeComponent();
 
+            this.WindowState = FormWindowState.Maximized;
             this.MinimizeBox = false;
             this.MaximizeBox = false;
-        }
-
-        private void btn_logout_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Main mainForm = new Main();
-            mainForm.ShowDialog();
         }
     }
 }

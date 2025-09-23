@@ -28,63 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            btn_logout = new Button();
+            adminMenu = new MenuStrip();
+            dashboardToolStripMenuItem = new ToolStripMenuItem();
+            productsToolStripMenuItem = new ToolStripMenuItem();
+            inventoryToolStripMenuItem = new ToolStripMenuItem();
+            salesToolStripMenuItem = new ToolStripMenuItem();
+            reportToolStripMenuItem = new ToolStripMenuItem();
+            logoutToolStripMenuItem = new ToolStripMenuItem();
+            adminMenu.SuspendLayout();
             SuspendLayout();
             // 
-            // label1
+            // adminMenu
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(139, 175);
-            label1.Name = "label1";
-            label1.Size = new Size(523, 41);
-            label1.TabIndex = 0;
-            label1.Text = "WELCOME TO ADMIN DASHBOARD";
+            adminMenu.BackColor = Color.FromArgb(77, 157, 152);
+            adminMenu.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            adminMenu.ImageScalingSize = new Size(20, 20);
+            adminMenu.Items.AddRange(new ToolStripItem[] { dashboardToolStripMenuItem, productsToolStripMenuItem, inventoryToolStripMenuItem, salesToolStripMenuItem, reportToolStripMenuItem, logoutToolStripMenuItem });
+            adminMenu.Location = new Point(0, 0);
+            adminMenu.Name = "adminMenu";
+            adminMenu.Size = new Size(1902, 31);
+            adminMenu.TabIndex = 0;
+            adminMenu.Text = "menuStrip1";
             // 
-            // label2
+            // dashboardToolStripMenuItem
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.ForeColor = SystemColors.Control;
-            label2.Location = new Point(273, 231);
-            label2.Name = "label2";
-            label2.Size = new Size(248, 28);
-            label2.TabIndex = 1;
-            label2.Text = "Will be implemented soon!";
+            dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
+            dashboardToolStripMenuItem.Size = new Size(107, 27);
+            dashboardToolStripMenuItem.Text = "Dashboard";
             // 
-            // btn_logout
+            // productsToolStripMenuItem
             // 
-            btn_logout.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_logout.Location = new Point(310, 334);
-            btn_logout.Name = "btn_logout";
-            btn_logout.Size = new Size(186, 59);
-            btn_logout.TabIndex = 5;
-            btn_logout.Text = "LOGOUT";
-            btn_logout.UseVisualStyleBackColor = true;
-            btn_logout.Click += btn_logout_Click;
+            productsToolStripMenuItem.Name = "productsToolStripMenuItem";
+            productsToolStripMenuItem.Size = new Size(91, 27);
+            productsToolStripMenuItem.Text = "Products";
             // 
-            // AdminDashboard
+            // inventoryToolStripMenuItem
+            // 
+            inventoryToolStripMenuItem.Name = "inventoryToolStripMenuItem";
+            inventoryToolStripMenuItem.Size = new Size(96, 27);
+            inventoryToolStripMenuItem.Text = "Inventory";
+            // 
+            // salesToolStripMenuItem
+            // 
+            salesToolStripMenuItem.Name = "salesToolStripMenuItem";
+            salesToolStripMenuItem.Size = new Size(62, 27);
+            salesToolStripMenuItem.Text = "Sales";
+            // 
+            // reportToolStripMenuItem
+            // 
+            reportToolStripMenuItem.Name = "reportToolStripMenuItem";
+            reportToolStripMenuItem.Size = new Size(75, 27);
+            reportToolStripMenuItem.Text = "Report";
+            // 
+            // logoutToolStripMenuItem
+            // 
+            logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            logoutToolStripMenuItem.Size = new Size(78, 27);
+            logoutToolStripMenuItem.Text = "Logout";
+            // 
+            // AdminPage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Highlight;
-            ClientSize = new Size(800, 450);
-            Controls.Add(btn_logout);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Name = "AdminDashboard";
+            BackColor = SystemColors.Control;
+            ClientSize = new Size(1902, 1033);
+            Controls.Add(adminMenu);
+            FormBorderStyle = FormBorderStyle.None;
+            MainMenuStrip = adminMenu;
+            Name = "AdminPage";
             Text = "Admin Dashboard";
+            adminMenu.ResumeLayout(false);
+            adminMenu.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private Label label2;
-        private Button btn_logout;
+        private MenuStrip adminMenu;
+        private ToolStripMenuItem dashboardToolStripMenuItem;
+        private ToolStripMenuItem productsToolStripMenuItem;
+        private ToolStripMenuItem inventoryToolStripMenuItem;
+        private ToolStripMenuItem salesToolStripMenuItem;
+        private ToolStripMenuItem reportToolStripMenuItem;
+        private ToolStripMenuItem logoutToolStripMenuItem;
     }
 }

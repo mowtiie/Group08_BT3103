@@ -44,8 +44,8 @@ namespace Saleling.UI
                 if (matchingUser != null)
                 {
                     this.Hide();                    
-                    AdminDashboard adminDashboard = new AdminDashboard();
-                    adminDashboard.ShowDialog();
+                    AdminPage adminPage = new AdminPage();
+                    adminPage.ShowDialog();
                 }
                 else
                 {
