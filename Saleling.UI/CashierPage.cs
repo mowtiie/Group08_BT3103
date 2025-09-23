@@ -27,5 +27,12 @@ namespace Saleling.UI
             cashierDashboard.MdiParent = this;
             cashierDashboard.Show();
         }
+
+        private void menuItemLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Main mainPage = new Main();
+            mainPage.Show();
+        }
     }
 }

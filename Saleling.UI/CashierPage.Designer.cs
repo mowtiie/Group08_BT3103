@@ -90,6 +90,7 @@
             menuItemLogout.Name = "menuItemLogout";
             menuItemLogout.Size = new Size(91, 32);
             menuItemLogout.Text = "Logout";
+            menuItemLogout.Click += menuItemLogout_Click;
             // 
             // CashierPage
             // 
