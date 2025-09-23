@@ -37,8 +37,8 @@ namespace Saleling.UI
                 if (matchingUser != null)
                 {
                     this.Hide();
-                    CashierDashboard cashierDashboard = new CashierDashboard();
-                    cashierDashboard.ShowDialog();
+                    CashierPage cashierPage = new CashierPage();
+                    cashierPage.ShowDialog();
                 }
                 else
                 {
