@@ -8,7 +8,7 @@ namespace Saleling.UI
             this.MaximizeBox = false;
             this.MinimizeBox = false;
         }
-
+        
         private void btn_admin_Click(object sender, EventArgs e)
         {
             this.Hide();
