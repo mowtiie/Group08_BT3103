@@ -26,7 +26,6 @@ namespace Saleling.UI
         {
             AdminDashboard adminDashboard = new AdminDashboard();
             adminDashboard.MdiParent = this;
-            adminDashboard.WindowState = FormWindowState.Maximized;
             adminDashboard.Show();
         }
     }
