@@ -40,13 +40,13 @@
             // 
             // menuAdmin
             // 
-            menuAdmin.BackColor = Color.FromArgb(77, 157, 152);
+            menuAdmin.BackColor = Color.FromArgb(64, 64, 64);
             menuAdmin.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             menuAdmin.ImageScalingSize = new Size(20, 20);
             menuAdmin.Items.AddRange(new ToolStripItem[] { menuItemDashboard, menuItemProducts, menuItemInventory, menuItemSales, menuItemReports, menuItemLogout });
             menuAdmin.Location = new Point(0, 0);
             menuAdmin.Name = "menuAdmin";
-            menuAdmin.Size = new Size(1902, 36);
+            menuAdmin.Size = new Size(1920, 36);
             menuAdmin.TabIndex = 0;
             menuAdmin.Text = "menuStrip1";
             // 
@@ -97,12 +97,13 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(1902, 1033);
+            ClientSize = new Size(1920, 1080);
             Controls.Add(menuAdmin);
             FormBorderStyle = FormBorderStyle.None;
             MainMenuStrip = menuAdmin;
             Name = "AdminPage";
             Text = "Admin Dashboard";
+            Load += AdminPage_Load;
             menuAdmin.ResumeLayout(false);
             menuAdmin.PerformLayout();
             ResumeLayout(false);

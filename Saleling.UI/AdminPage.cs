@@ -17,8 +17,17 @@ namespace Saleling.UI
             InitializeComponent();
 
             this.WindowState = FormWindowState.Maximized;
+            this.IsMdiContainer = true;
             this.MinimizeBox = false;
             this.MaximizeBox = false;
+        }
+
+        private void AdminPage_Load(object sender, EventArgs e)
+        {
+            AdminDashboard adminDashboard = new AdminDashboard();
+            adminDashboard.MdiParent = this;
+            adminDashboard.WindowState = FormWindowState.Maximized;
+            adminDashboard.Show();
         }
     }
 }
