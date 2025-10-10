@@ -67,6 +67,7 @@
     <Build Include="Tables\Admin.sql" />
     <Build Include="Tables\Cashier.sql" />
     <Build Include="StoredProcedures\AddProduct.sql" />
+    <Build Include="StoredProcedures\AddProductVariants.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Saleling.DB.refactorlog" />
