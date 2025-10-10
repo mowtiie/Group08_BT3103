@@ -68,6 +68,7 @@
     <Build Include="Tables\Cashier.sql" />
     <Build Include="StoredProcedures\AddProduct.sql" />
     <Build Include="StoredProcedures\GetProducts.sql" />
+    <Build Include="StoredProcedures\GetProductByID.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Saleling.DB.refactorlog" />
