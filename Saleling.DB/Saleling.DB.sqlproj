@@ -70,6 +70,7 @@
     <Build Include="Tables\Products.sql" />
     <Build Include="Tables\Users.sql" />
     <Build Include="Tables\Suppliers.sql" />
+    <Build Include="Tables\Categories.sql" />
     <Build Include="StoredProcedures\AddProduct.sql" />
     <Build Include="StoredProcedures\GetOutOfStockItemsCount.sql" />
     <Build Include="StoredProcedures\GetProductByID.sql" />
