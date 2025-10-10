@@ -72,6 +72,7 @@
     <Build Include="Tables\Suppliers.sql" />
     <Build Include="Tables\Categories.sql" />
     <Build Include="StoredProcedures\AddProduct.sql" />
+    <Build Include="StoredProcedures\SearchProducts.sql" />
     <Build Include="StoredProcedures\GetLowStockValue.sql" />
     <Build Include="StoredProcedures\GetProducts.sql" />
     <Build Include="StoredProcedures\GetProductByID.sql" />
