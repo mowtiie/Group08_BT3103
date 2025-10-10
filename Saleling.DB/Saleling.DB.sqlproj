@@ -66,6 +66,7 @@
   <ItemGroup>
     <Build Include="Tables\Admin.sql" />
     <Build Include="Tables\Cashier.sql" />
+    <Build Include="Tables\Products.sql" />
     <Build Include="Tables\Users.sql" />
     <Build Include="StoredProcedures\AddProduct.sql" />
     <Build Include="StoredProcedures\DeleteProduct.sql" />
