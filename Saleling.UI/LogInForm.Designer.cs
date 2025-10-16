@@ -57,19 +57,20 @@
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
-            panel1.Location = new Point(3, 1);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(542, 617);
             panel1.TabIndex = 0;
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = Properties.Resources.hanger_2_svgrepo_com__1_;
-            pictureBox3.Location = new Point(204, 115);
+            pictureBox3.Image = Properties.Resources.logo;
+            pictureBox3.Location = new Point(208, 129);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(132, 112);
+            pictureBox3.Size = new Size(118, 108);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 2;
+            pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
             // 
             // label3
@@ -120,7 +121,7 @@
             // 
             pictureBox1.BackgroundImageLayout = ImageLayout.Center;
             pictureBox1.ErrorImage = null;
-            pictureBox1.Image = Properties.Resources.man_user_svgrepo_com;
+            pictureBox1.Image = Properties.Resources.username;
             pictureBox1.Location = new Point(15, 15);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(30, 33);
@@ -150,7 +151,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.key_svgrepo_com;
+            pictureBox2.Image = Properties.Resources.password;
             pictureBox2.Location = new Point(15, 14);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(30, 33);
