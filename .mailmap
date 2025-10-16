@@ -1,0 +1,32 @@
+#  Maps old/misspelled author names to their canonical form.
+#
+#  1. Correcting a user's name but keeping the same email (your scenario).
+#     New User <user@example.com> "Old User Name" <user@example.com>
+#
+#  2. Merging two different emails used by the same person into one canonical email.
+#     Jane Doe <jane.doe@work.com> <jane.doe@personal.net>
+#
+#  3. Correcting capitalization and merging two slightly different identities.
+#     This rule covers both a typo and a capitalization error.
+#     Alex Smith <alex.smith@corp.com> Alex.Smith <alex.smith@corp.com>
+#
+#  4. Correcting a typo in a name and merging it with a canonical email.
+#     Captain Kirk <jim.kirk@starfleet.org> Capt Kirk <jim.kirk@starfleet.org>
+#
+#  5. Merging all commits from an old, abandoned email into the new, correct identity.
+#     This is a one-way mapping from the old email to the canonical identity.
+#     Joe Bloggs <joe.bloggs@newcorp.com> <old.email@abandoned.net> 
+#
+#  6. Correcting a username that had no space, but a typo.
+#     Sam Green <sam.green@dev.io> Samm Green <sam.green@dev.io>
+
+Vrixzandro Eliponga <serbispace@proton.me> Vrixzandro Eliponga <167630237+eipna@users.noreply.github.com>
+Vrixzandro Eliponga <serbispace@proton.me> eipna <serbispace@proton.me>
+
+Adrienne Jalocon <jaloconadrienne@gmail.com> Adrienne20894 <jaloconadrienne@gmail.com>
+
+Mark Kerwin Ballelos <markkerwinballelos@gmail.com> Tutsy <markkerwinballelos@gmail.com>
+Mark Kerwin Ballelos <markkerwinballelos@gmail.com> Tutsy <markballelos1@gmail.com>
+
+James Carl Villalobos <villalobosjamescarl30@gmail.com> villalobosjamescarl30 <villalobosjamescarl30@gmail.com>
+James Carl Villalobos <villalobosjamescarl30@gmail.com> villalobosjames30 <vilallobosjamescarl30@gmail.com>
