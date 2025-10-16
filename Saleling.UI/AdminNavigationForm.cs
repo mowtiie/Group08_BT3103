@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Saleling.UI
 {
-    public partial class AdminDashboard : Form
+    public partial class AdminNavigationForm : Form
     {
-        public AdminDashboard()
+        public AdminNavigationForm()
         {
             InitializeComponent();
         }

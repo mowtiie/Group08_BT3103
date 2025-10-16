@@ -1,6 +1,6 @@
 ﻿namespace Saleling.UI
 {
-    partial class AdminNavigation
+    partial class AdminNavigationForm
     {
         /// <summary>
         /// Required designer variable.
