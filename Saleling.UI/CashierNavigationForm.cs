@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Saleling.UI
 {
-    public partial class Cashier_Navigation : Form
+    public partial class CashierNavigationForm : Form
     {
-        public Cashier_Navigation()
+        public CashierNavigationForm()
         {
             InitializeComponent();
         }
