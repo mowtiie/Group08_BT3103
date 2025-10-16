@@ -65,7 +65,7 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = Properties.Resources.logo;
+            pictureBox3.Image = Properties.Resources.saleling;
             pictureBox3.Location = new Point(208, 129);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(118, 108);

@@ -102,7 +102,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
             button1.ForeColor = Color.White;
-            button1.Image = Properties.Resources.house_svgrepo_com__1_;
+            button1.Image = Properties.Resources.dashboard;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
             button1.Location = new Point(0, 223);
             button1.Name = "button1";
@@ -120,7 +120,7 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
             button2.ForeColor = Color.White;
-            button2.Image = Properties.Resources.users_svgrepo_com__1_;
+            button2.Image = Properties.Resources.users;
             button2.ImageAlign = ContentAlignment.MiddleLeft;
             button2.Location = new Point(0, 318);
             button2.Name = "button2";
@@ -138,7 +138,7 @@
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
             button3.ForeColor = Color.White;
-            button3.Image = Properties.Resources.product_svgrepo_com__1_;
+            button3.Image = Properties.Resources.product;
             button3.ImageAlign = ContentAlignment.MiddleLeft;
             button3.Location = new Point(0, 394);
             button3.Name = "button3";
@@ -190,7 +190,7 @@
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
             button6.ForeColor = Color.White;
-            button6.Image = Properties.Resources.inventory_svgrepo_com__1_;
+            button6.Image = Properties.Resources.inventory;
             button6.ImageAlign = ContentAlignment.MiddleLeft;
             button6.Location = new Point(-3, 670);
             button6.Name = "button6";
@@ -208,7 +208,7 @@
             button7.FlatStyle = FlatStyle.Flat;
             button7.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
             button7.ForeColor = Color.White;
-            button7.Image = Properties.Resources.reports_svgrepo_com__1_;
+            button7.Image = Properties.Resources.report;
             button7.ImageAlign = ContentAlignment.MiddleLeft;
             button7.Location = new Point(-3, 755);
             button7.Name = "button7";
@@ -226,7 +226,7 @@
             button8.FlatStyle = FlatStyle.Flat;
             button8.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
             button8.ForeColor = Color.White;
-            button8.Image = Properties.Resources.house_svgrepo_com__1_;
+            button8.Image = Properties.Resources.logout;
             button8.ImageAlign = ContentAlignment.MiddleLeft;
             button8.Location = new Point(0, 838);
             button8.Name = "button8";

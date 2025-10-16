@@ -99,7 +99,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
             button1.ForeColor = Color.White;
-            button1.Image = Properties.Resources.house_svgrepo_com__1_;
+            button1.Image = Properties.Resources.dashboard;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
             button1.Location = new Point(0, 229);
             button1.Name = "button1";
@@ -132,7 +132,7 @@
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
             button3.ForeColor = Color.White;
-            button3.Image = Properties.Resources.product_svgrepo_com__1_;
+            button3.Image = Properties.Resources.product;
             button3.ImageAlign = ContentAlignment.MiddleLeft;
             button3.Location = new Point(-6, 387);
             button3.Name = "button3";
@@ -149,7 +149,6 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
             button4.ForeColor = Color.White;
-            button4.Image = Properties.Resources.category_svgrepo_com__1_;
             button4.ImageAlign = ContentAlignment.MiddleLeft;
             button4.Location = new Point(-3, 496);
             button4.Name = "button4";
@@ -182,7 +181,7 @@
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
             button6.ForeColor = Color.White;
-            button6.Image = Properties.Resources.reports_svgrepo_com__1_;
+            button6.Image = Properties.Resources.report;
             button6.ImageAlign = ContentAlignment.MiddleLeft;
             button6.Location = new Point(-6, 765);
             button6.Name = "button6";
@@ -199,7 +198,7 @@
             button7.FlatStyle = FlatStyle.Flat;
             button7.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
             button7.ForeColor = Color.White;
-            button7.Image = Properties.Resources.inventory_svgrepo_com__1_;
+            button7.Image = Properties.Resources.inventory;
             button7.ImageAlign = ContentAlignment.MiddleLeft;
             button7.Location = new Point(-3, 670);
             button7.Name = "button7";
