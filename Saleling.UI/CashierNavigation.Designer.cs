@@ -116,7 +116,6 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
             button2.ForeColor = Color.White;
-            button2.Image = Properties.Resources.basket_svgrepo_com__1_;
             button2.ImageAlign = ContentAlignment.MiddleLeft;
             button2.Location = new Point(0, 310);
             button2.Name = "button2";
@@ -167,7 +166,6 @@
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
             button5.ForeColor = Color.White;
-            button5.Image = Properties.Resources.building_svgrepo_com__1_;
             button5.ImageAlign = ContentAlignment.MiddleLeft;
             button5.Location = new Point(-3, 591);
             button5.Name = "button5";
@@ -218,7 +216,6 @@
             button8.FlatStyle = FlatStyle.Flat;
             button8.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
             button8.ForeColor = Color.White;
-            button8.Image = Properties.Resources.logout_svgrepo_com_1_cropped__1_;
             button8.ImageAlign = ContentAlignment.MiddleLeft;
             button8.Location = new Point(-3, 843);
             button8.Name = "button8";
