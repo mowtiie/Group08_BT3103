@@ -156,7 +156,6 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
             button4.ForeColor = Color.White;
-            button4.Image = Properties.Resources.category_svgrepo_com__1_;
             button4.ImageAlign = ContentAlignment.MiddleLeft;
             button4.Location = new Point(-2, 496);
             button4.Name = "button4";
@@ -174,7 +173,6 @@
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
             button5.ForeColor = Color.White;
-            button5.Image = Properties.Resources.building_svgrepo_com__1_;
             button5.ImageAlign = ContentAlignment.MiddleLeft;
             button5.Location = new Point(-3, 591);
             button5.Name = "button5";

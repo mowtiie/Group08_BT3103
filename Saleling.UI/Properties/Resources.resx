@@ -127,9 +127,6 @@
   <data name="password" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\key-svgrepo-com.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BGGGGG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BGGGGG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="users-svgrepo-com (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\users-svgrepo-com (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -150,5 +147,8 @@
   </data>
   <data name="logout-svgrepo-com_1_cropped" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logout-svgrepo-com_1_cropped.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
