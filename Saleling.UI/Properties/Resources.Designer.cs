@@ -63,9 +63,9 @@ namespace Saleling.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BGGGGG {
+        internal static System.Drawing.Bitmap close {
             get {
-                object obj = ResourceManager.GetObject("BGGGGG", resourceCulture);
+                object obj = ResourceManager.GetObject("close", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Saleling.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap building_svgrepo_com__1_ {
+        internal static System.Drawing.Bitmap logo {
             get {
-                object obj = ResourceManager.GetObject("building-svgrepo-com (1)", resourceCulture);
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace Saleling.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap category_svgrepo_com__1_ {
+        internal static System.Drawing.Bitmap password {
             get {
-                object obj = ResourceManager.GetObject("category-svgrepo-com (1)", resourceCulture);
+                object obj = ResourceManager.GetObject("password", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -95,7 +95,7 @@ namespace Saleling.UI.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap ChatGPT_Image_Sep_6__2025__08_56_49_PM {
             get {
-                object obj = ResourceManager.GetObject("ChatGPT Image Sep 6, 2025, 08_56_49 PM", resourceCulture);
+                object obj = ResourceManager.GetObject("username", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

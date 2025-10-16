@@ -31,8 +31,6 @@ namespace Saleling.UI
         private void menuItemLogout_Click(object sender, EventArgs e)
         {
             this.Close();
-            Main mainPage = new Main();
-            mainPage.Show();
         }
     }
 }
