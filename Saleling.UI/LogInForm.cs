@@ -11,12 +11,12 @@ using Saleling.Controller;
 
 namespace Saleling.UI
 {
-    public partial class LogInForm : Form
+    public partial class LoginForm : Form
     {
 
         private readonly UserController accountController;
 
-        public LogInForm()
+        public LoginForm()
         {
             InitializeComponent();
             this.accountController = new UserController();
@@ -25,6 +25,11 @@ namespace Saleling.UI
         private void LogInForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pbClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

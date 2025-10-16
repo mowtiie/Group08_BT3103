@@ -1,6 +1,6 @@
 ﻿namespace Saleling.UI
 {
-    partial class LogInForm
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -35,18 +35,20 @@
             label1 = new Label();
             panel2 = new Panel();
             pictureBox1 = new PictureBox();
-            textBox1 = new TextBox();
+            txtUsername = new TextBox();
             panel3 = new Panel();
             pictureBox2 = new PictureBox();
-            textBox2 = new TextBox();
-            checkBox1 = new CheckBox();
-            button1 = new Button();
+            txtPassword = new TextBox();
+            chkboxShowPassword = new CheckBox();
+            btnLogin = new Button();
+            pbClose = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbClose).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -108,7 +110,7 @@
             // 
             panel2.BackColor = Color.White;
             panel2.Controls.Add(pictureBox1);
-            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(txtUsername);
             panel2.Location = new Point(602, 228);
             panel2.Name = "panel2";
             panel2.Size = new Size(461, 59);
@@ -126,21 +128,21 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // txtUsername
             // 
-            textBox1.BackColor = Color.White;
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Location = new Point(60, 9);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(386, 41);
-            textBox1.TabIndex = 0;
+            txtUsername.BackColor = Color.White;
+            txtUsername.BorderStyle = BorderStyle.None;
+            txtUsername.Font = new Font("Segoe UI", 16F);
+            txtUsername.Location = new Point(60, 12);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(386, 36);
+            txtUsername.TabIndex = 0;
             // 
             // panel3
             // 
             panel3.BackColor = Color.White;
             panel3.Controls.Add(pictureBox2);
-            panel3.Controls.Add(textBox2);
+            panel3.Controls.Add(txtPassword);
             panel3.Location = new Point(602, 302);
             panel3.Name = "panel3";
             panel3.Size = new Size(461, 59);
@@ -156,54 +158,72 @@
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.BackColor = Color.White;
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Location = new Point(60, 9);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(386, 41);
-            textBox2.TabIndex = 1;
+            txtPassword.BackColor = Color.White;
+            txtPassword.BorderStyle = BorderStyle.None;
+            txtPassword.Font = new Font("Segoe UI", 16F);
+            txtPassword.Location = new Point(60, 11);
+            txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '•';
+            txtPassword.Size = new Size(386, 36);
+            txtPassword.TabIndex = 1;
+            txtPassword.UseSystemPasswordChar = true;
             // 
-            // checkBox1
+            // chkboxShowPassword
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold);
-            checkBox1.Location = new Point(602, 376);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(151, 27);
-            checkBox1.TabIndex = 4;
-            checkBox1.Text = "Show Password";
-            checkBox1.UseVisualStyleBackColor = true;
+            chkboxShowPassword.AutoSize = true;
+            chkboxShowPassword.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold);
+            chkboxShowPassword.Location = new Point(602, 376);
+            chkboxShowPassword.Name = "chkboxShowPassword";
+            chkboxShowPassword.Size = new Size(151, 27);
+            chkboxShowPassword.TabIndex = 4;
+            chkboxShowPassword.Text = "Show Password";
+            chkboxShowPassword.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnLogin
             // 
-            button1.BackColor = SystemColors.Highlight;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(602, 445);
-            button1.Name = "button1";
-            button1.Size = new Size(163, 62);
-            button1.TabIndex = 5;
-            button1.Text = "LOGIN";
-            button1.UseVisualStyleBackColor = false;
+            btnLogin.BackColor = SystemColors.Highlight;
+            btnLogin.FlatStyle = FlatStyle.Flat;
+            btnLogin.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold);
+            btnLogin.ForeColor = Color.White;
+            btnLogin.Location = new Point(602, 445);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(163, 62);
+            btnLogin.TabIndex = 5;
+            btnLogin.Text = "LOGIN";
+            btnLogin.UseVisualStyleBackColor = false;
             // 
-            // LogInForm
+            // pbClose
+            // 
+            pbClose.BackgroundImageLayout = ImageLayout.Center;
+            pbClose.Cursor = Cursors.Hand;
+            pbClose.ErrorImage = null;
+            pbClose.Image = Properties.Resources.close;
+            pbClose.Location = new Point(1075, 12);
+            pbClose.Name = "pbClose";
+            pbClose.Size = new Size(30, 33);
+            pbClose.SizeMode = PictureBoxSizeMode.Zoom;
+            pbClose.TabIndex = 2;
+            pbClose.TabStop = false;
+            pbClose.Click += pbClose_Click;
+            // 
+            // LoginForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1117, 617);
-            Controls.Add(button1);
-            Controls.Add(checkBox1);
+            Controls.Add(pbClose);
+            Controls.Add(btnLogin);
+            Controls.Add(chkboxShowPassword);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(label1);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "LogInForm";
-            Text = "LogInForm";
+            Name = "LoginForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "LoginForm";
             Load += LogInForm_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -214,6 +234,7 @@
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbClose).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -223,15 +244,16 @@
         private Panel panel1;
         private Label label1;
         private Panel panel2;
-        private TextBox textBox1;
+        private TextBox txtUsername;
         private Panel panel3;
-        private TextBox textBox2;
+        private TextBox txtPassword;
         private Label label2;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private CheckBox checkBox1;
+        private CheckBox chkboxShowPassword;
         private PictureBox pictureBox3;
         private Label label3;
-        private Button button1;
+        private Button btnLogin;
+        private PictureBox pbClose;
     }
 }
