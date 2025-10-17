@@ -14,7 +14,7 @@ namespace Saleling.Repository
             this.connectionString = DatabaseUtil.GetConnectionString();
         }
 
-        public async Task<UserModel>? GetByUsernameAsync(string username, string password)
+        public async Task<UserModel?> GetByUsernameAsync(string username)
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {

@@ -1,5 +1,6 @@
 ﻿using Saleling.Model;
 using Saleling.Repository;
+using Saleling.Util;
 
 namespace Saleling.Controller
 {
@@ -12,46 +13,28 @@ namespace Saleling.Controller
             this.userRepository = new UserRepository();
         }
 
-        public UserModel ValidateAdmin(string Username, string Password)
+        public async Task<UserModel> AuthenticateUserAsync(string username, string password)
         {
-            try
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                if (string.IsNullOrEmpty(Password) || string.IsNullOrEmpty(Username))
-                {
-                    throw new Exception("Username or Password must not be empty.");
-                }
-                else
-                {
-                    Console.WriteLine("Login Successful");
-                }
-            }
-            catch (InvalidCastException ex)
-            {
-                Console.WriteLine(ex.Message);
+                throw new Exception("Please enter both a username and password");
             }
 
-            return userRepository.ValidateAdmin(Username, Password);
-        }
-
-        public UserModel ValidateCashier(string Username, string Password)
-        {
-            try
+            UserModel? matchedUser = await userRepository.GetByUsernameAsync(username);
+            if (matchedUser == null)
             {
-                if (string.IsNullOrEmpty(Password) || string.IsNullOrEmpty(Username))
-                {
-                    throw new Exception("Username or Password must not be empty.");
-                }
-                else
-                {
-                    Console.WriteLine("Login Successful");
-                }
-            }
-            catch (InvalidCastException ex)
-            {
-                Console.WriteLine(ex.Message);
+                throw new Exception("The user does not exist");
             }
 
-            return userRepository.ValidateCashier(Username, Password);
+            bool didpPasswordMatch = SecurityUtil.VerifyPassword(password, matchedUser.HashedPassword);
+            if (didpPasswordMatch)
+            {
+                return matchedUser;
+            }
+            else
+            {
+                throw new Exception("Invalid credentials");
+            }
         }
     }
 }
