@@ -11,26 +11,33 @@ namespace Saleling.Util
     {
         private static readonly SessionUtil instance = new SessionUtil();
 
+        private readonly object lockObject = new object();
+
+        private UserModel currentUser;
+
         private SessionUtil() { }
 
-        public static SessionUtil Instance
+        public static SessionUtil Instance { get { return instance; } }
+
+        public UserModel CurrentUser
         {
-            get
-            {
-                return instance;
-            }
+            get { lock (lockObject) { return currentUser; } }
         }
 
-        public UserModel CurrentUser { get; private set; }
-
-        public void SetCurrentUser(UserModel user)
+        public void SetLoggedInUser(UserModel account)
         {
-            this.CurrentUser = user;
+            lock (lockObject)
+            {
+                currentUser = account;
+            }
         }
 
         public void Logout()
         {
-            this.CurrentUser = null;
+            lock (lockObject)
+            {
+                currentUser = null;
+            }
         }
     }
 }
