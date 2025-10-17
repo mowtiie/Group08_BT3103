@@ -61,7 +61,7 @@
     <Folder Include="StoredProcedures" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="Scripts\Initial Data.sql" />
+    <PostDeploy Include="Scripts\Data Seeding.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\ProductVariants.sql" />
