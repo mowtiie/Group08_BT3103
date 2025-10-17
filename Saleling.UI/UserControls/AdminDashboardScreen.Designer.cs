@@ -1,6 +1,6 @@
 ﻿namespace Saleling.UI
 {
-    partial class AdminDashboard_2_
+    partial class AdminDashboardScreen
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
             label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
             panel2 = new Panel();
             label5 = new Label();
             label6 = new Label();
@@ -49,9 +49,9 @@
             dataGridView2 = new DataGridView();
             label15 = new Label();
             panel4 = new Panel();
-            label16 = new Label();
-            label17 = new Label();
             button1 = new Button();
+            label17 = new Label();
+            label16 = new Label();
             panel5 = new Panel();
             button2 = new Button();
             label18 = new Label();
@@ -87,25 +87,15 @@
             panel1.Size = new Size(500, 300);
             panel1.TabIndex = 0;
             // 
-            // label1
+            // label4
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold);
-            label1.Location = new Point(119, 60);
-            label1.Name = "label1";
-            label1.Size = new Size(258, 54);
-            label1.TabIndex = 0;
-            label1.Text = "Today's Sales";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Semibold", 20F, FontStyle.Bold);
-            label2.Location = new Point(221, 138);
-            label2.Name = "label2";
-            label2.Size = new Size(39, 46);
-            label2.TabIndex = 1;
-            label2.Text = "0";
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 12F);
+            label4.Location = new Point(177, 243);
+            label4.Name = "label4";
+            label4.Size = new Size(133, 28);
+            label4.TabIndex = 3;
+            label4.Text = "0 transactions";
             // 
             // label3
             // 
@@ -117,15 +107,25 @@
             label3.TabIndex = 2;
             label3.Text = "_______________________________";
             // 
-            // label4
+            // label2
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F);
-            label4.Location = new Point(177, 243);
-            label4.Name = "label4";
-            label4.Size = new Size(133, 28);
-            label4.TabIndex = 3;
-            label4.Text = "0 transactions";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Semibold", 20F, FontStyle.Bold);
+            label2.Location = new Point(221, 138);
+            label2.Name = "label2";
+            label2.Size = new Size(39, 46);
+            label2.TabIndex = 1;
+            label2.Text = "0";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold);
+            label1.Location = new Point(119, 60);
+            label1.Name = "label1";
+            label1.Size = new Size(258, 54);
+            label1.TabIndex = 0;
+            label1.Text = "Today's Sales";
             // 
             // panel2
             // 
@@ -295,16 +295,15 @@
             panel4.Size = new Size(360, 217);
             panel4.TabIndex = 10;
             // 
-            // label16
+            // button1
             // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
-            label16.ForeColor = SystemColors.ActiveCaptionText;
-            label16.Location = new Point(30, 39);
-            label16.Name = "label16";
-            label16.Size = new Size(170, 25);
-            label16.TabIndex = 11;
-            label16.Text = "User Management";
+            button1.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold);
+            button1.Location = new Point(30, 142);
+            button1.Name = "button1";
+            button1.Size = new Size(166, 42);
+            button1.TabIndex = 13;
+            button1.Text = "Manage Users";
+            button1.UseVisualStyleBackColor = true;
             // 
             // label17
             // 
@@ -317,15 +316,16 @@
             label17.TabIndex = 12;
             label17.Text = "Manage user accounts and roles";
             // 
-            // button1
+            // label16
             // 
-            button1.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold);
-            button1.Location = new Point(30, 142);
-            button1.Name = "button1";
-            button1.Size = new Size(166, 42);
-            button1.TabIndex = 13;
-            button1.Text = "Manage Users";
-            button1.UseVisualStyleBackColor = true;
+            label16.AutoSize = true;
+            label16.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            label16.ForeColor = SystemColors.ActiveCaptionText;
+            label16.Location = new Point(30, 39);
+            label16.Name = "label16";
+            label16.Size = new Size(170, 25);
+            label16.TabIndex = 11;
+            label16.Text = "User Management";
             // 
             // panel5
             // 
@@ -456,7 +456,7 @@
             label23.TabIndex = 11;
             label23.Text = "Stock Management";
             // 
-            // AdminDashboard_2_
+            // AdminDashboardScreen
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -474,7 +474,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             ForeColor = SystemColors.ActiveCaptionText;
-            Name = "AdminDashboard_2_";
+            Name = "AdminDashboardScreen";
             Size = new Size(1547, 1080);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

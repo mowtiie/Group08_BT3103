@@ -41,6 +41,7 @@
             btnUsers = new Button();
             btnDashboard = new Button();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            contentPanel = new Panel();
             panel1.SuspendLayout();
             drawerPanel.SuspendLayout();
             SuspendLayout();
@@ -90,6 +91,7 @@
             drawerPanel.Controls.Add(btnUsers);
             drawerPanel.Controls.Add(btnDashboard);
             drawerPanel.Controls.Add(panel1);
+            drawerPanel.Dock = DockStyle.Left;
             drawerPanel.Location = new Point(0, 0);
             drawerPanel.Name = "drawerPanel";
             drawerPanel.Size = new Size(373, 1080);
@@ -248,17 +250,25 @@
             btnDashboard.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnDashboard.UseVisualStyleBackColor = false;
             // 
+            // contentPanel
+            // 
+            contentPanel.Dock = DockStyle.Fill;
+            contentPanel.Location = new Point(373, 0);
+            contentPanel.Name = "contentPanel";
+            contentPanel.Size = new Size(1547, 1080);
+            contentPanel.TabIndex = 2;
+            // 
             // AdminNavigationForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(contentPanel);
             Controls.Add(drawerPanel);
             ForeColor = SystemColors.ButtonShadow;
             FormBorderStyle = FormBorderStyle.None;
             Name = "AdminNavigationForm";
-            Padding = new Padding(24, 0, 0, 0);
             Text = "AdminNavigation";
             Load += AdminNavigationForm_Load;
             panel1.ResumeLayout(false);
@@ -282,5 +292,6 @@
         private Button btnProducts;
         private Button btnUsers;
         private Button btnLogout;
+        private Panel contentPanel;
     }
 }
