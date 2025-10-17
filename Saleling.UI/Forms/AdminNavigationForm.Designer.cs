@@ -259,6 +259,7 @@
             Name = "AdminNavigationForm";
             Padding = new Padding(24, 0, 0, 0);
             Text = "AdminNavigation";
+            Load += AdminNavigationForm_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             drawerPanel.ResumeLayout(false);
