@@ -73,6 +73,15 @@ This project was developed by the following students:
 
 ---
 
+## 🛠️ Tech Stack
+
+* **Programming Language:** C# (.NET / WinForms or ASP.NET)
+* **Database:** Microsoft SQL Server
+* **Version Control:** Git & Github
+* **IDE:** Microsoft Visual Studio & SQL Server Management Studio
+
+---
+
 ## 🚀 Setup & Execution
 
 1.  **Clone the Repository:**
