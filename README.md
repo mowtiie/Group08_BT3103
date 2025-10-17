@@ -58,10 +58,10 @@ This project was developed by the following students:
 
 | Role | Name | Email | Course | Year Level |
 | :--- | :--- | :--- | :--- | :--- |
-| Leader | Vrixzandro Eliponga | vrixzandro.jm8b9@slmail.me | BSIT | 3rd Year |
-| Member | Mark Kerwin Ballelos | markkerwinballelos@gmail.com | BSIT | 3rd Year ||
-| Member | James Carl Villalobos | villalobosjamescarl30@gmail.com | BSIT | 3rd Year |
-| Member | Adrienne Jalocon | jaloconadrienne@gmail.com | BSIT | 3rd Year |
+| **Leader** | Vrixzandro Eliponga | vrixzandro.jm8b9@slmail.me | BSIT | 3rd Year |
+| **Member** | Mark Kerwin Ballelos | markkerwinballelos@gmail.com | BSIT | 3rd Year ||
+| **Member** | James Carl Villalobos | villalobosjamescarl30@gmail.com | BSIT | 3rd Year |
+| **Member** | Adrienne Jalocon | jaloconadrienne@gmail.com | BSIT | 3rd Year |
 
 ---
 
