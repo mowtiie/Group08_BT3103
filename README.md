@@ -86,7 +86,7 @@ This project was developed by the following students:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [Your-Repository-Link-Here]
+    git clone https://github.com/eipna/Group08_BT3103.git
     ```
 2.  **Database Configuration:**
     * Set up your SQL Server database.
