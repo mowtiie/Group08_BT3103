@@ -1,6 +1,7 @@
 ﻿using Saleling.Controller;
 using Saleling.Model;
 using Saleling.Util;
+using System.Threading.Tasks;
 
 namespace Saleling.UI
 {
@@ -67,6 +68,16 @@ namespace Saleling.UI
                 await LoggerUtil.Instance.LogAsync($"Error: {ex.Message}");
                 MessageBox.Show(ex.Message, "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private async void LoginForm_Load(object sender, EventArgs e)
+        {
+            await LoggerUtil.Instance.LogAsync("Application has started.");
+        }
+
+        private async void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            await LoggerUtil.Instance.LogAsync("Application has closed.");
         }
     }
 }
