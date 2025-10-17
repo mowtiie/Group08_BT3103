@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Saleling.UI
 {
-    public partial class ProductVariantDetails : Form
+    public partial class ProductDetailsForm : Form
     {
-        public ProductVariantDetails()
+        public ProductDetailsForm()
         {
             InitializeComponent();
         }
