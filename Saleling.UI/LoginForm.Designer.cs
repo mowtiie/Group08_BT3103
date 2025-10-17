@@ -181,6 +181,7 @@
             chkboxShowPassword.TabIndex = 4;
             chkboxShowPassword.Text = "Show Password";
             chkboxShowPassword.UseVisualStyleBackColor = true;
+            chkboxShowPassword.CheckedChanged += chkboxShowPassword_CheckedChanged;
             // 
             // btnLogin
             // 
@@ -194,6 +195,7 @@
             btnLogin.TabIndex = 5;
             btnLogin.Text = "LOGIN";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // pbClose
             // 
@@ -225,6 +227,8 @@
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LoginForm";
+            FormClosing += LoginForm_FormClosing;
+            Load += LoginForm_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
