@@ -31,7 +31,7 @@
             panel1 = new Panel();
             lblRole = new Label();
             lblName = new Label();
-            panel2 = new Panel();
+            drawerPanel = new Panel();
             btnLogout = new Button();
             btnReports = new Button();
             btnInventory = new Button();
@@ -42,7 +42,7 @@
             btnDashboard = new Button();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
+            drawerPanel.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -57,10 +57,9 @@
             // 
             // lblRole
             // 
-            lblRole.AutoSize = true;
             lblRole.Font = new Font("Segoe UI", 14F);
             lblRole.ForeColor = SystemColors.Control;
-            lblRole.Location = new Point(107, 123);
+            lblRole.Location = new Point(117, 126);
             lblRole.Name = "lblRole";
             lblRole.Size = new Size(158, 32);
             lblRole.TabIndex = 1;
@@ -74,27 +73,27 @@
             lblName.ForeColor = SystemColors.Control;
             lblName.Location = new Point(62, 72);
             lblName.Name = "lblName";
-            lblName.Size = new Size(262, 37);
+            lblName.Size = new Size(282, 37);
             lblName.TabIndex = 0;
-            lblName.Text = "Vrixzandro Eliponga";
+            lblName.Text = "System Administrator";
             lblName.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // panel2
+            // drawerPanel
             // 
-            panel2.BackColor = SystemColors.Highlight;
-            panel2.Controls.Add(btnLogout);
-            panel2.Controls.Add(btnReports);
-            panel2.Controls.Add(btnInventory);
-            panel2.Controls.Add(btnSuppliers);
-            panel2.Controls.Add(btnCategories);
-            panel2.Controls.Add(btnProducts);
-            panel2.Controls.Add(btnUsers);
-            panel2.Controls.Add(btnDashboard);
-            panel2.Controls.Add(panel1);
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(373, 1080);
-            panel2.TabIndex = 1;
+            drawerPanel.BackColor = SystemColors.Highlight;
+            drawerPanel.Controls.Add(btnLogout);
+            drawerPanel.Controls.Add(btnReports);
+            drawerPanel.Controls.Add(btnInventory);
+            drawerPanel.Controls.Add(btnSuppliers);
+            drawerPanel.Controls.Add(btnCategories);
+            drawerPanel.Controls.Add(btnProducts);
+            drawerPanel.Controls.Add(btnUsers);
+            drawerPanel.Controls.Add(btnDashboard);
+            drawerPanel.Controls.Add(panel1);
+            drawerPanel.Location = new Point(0, 0);
+            drawerPanel.Name = "drawerPanel";
+            drawerPanel.Size = new Size(373, 1080);
+            drawerPanel.TabIndex = 1;
             // 
             // btnLogout
             // 
@@ -254,7 +253,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1920, 1080);
-            Controls.Add(panel2);
+            Controls.Add(drawerPanel);
             ForeColor = SystemColors.ButtonShadow;
             FormBorderStyle = FormBorderStyle.None;
             Name = "AdminNavigationForm";
@@ -262,14 +261,14 @@
             Text = "AdminNavigation";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            panel2.ResumeLayout(false);
+            drawerPanel.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel1;
-        private Panel panel2;
+        private Panel drawerPanel;
         private Label lblName;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Label lblRole;
