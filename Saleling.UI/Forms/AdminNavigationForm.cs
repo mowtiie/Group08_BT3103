@@ -6,11 +6,13 @@ namespace Saleling.UI
     public partial class AdminNavigationForm : Form
     {
         private UserModel currentLoggedInUser;
+        private readonly List<Button> drawerButtons;
 
         public AdminNavigationForm()
         {
             InitializeComponent();
 
+            this.drawerButtons = new List<Button>();
             this.currentLoggedInUser = SessionUtil.Instance.CurrentUser;
         }
 
@@ -18,6 +20,17 @@ namespace Saleling.UI
         {
             lblName.Text = $"{currentLoggedInUser.FirstName} {currentLoggedInUser.LastName}";
             lblRole.Text = currentLoggedInUser.Role;
+        }
+
+        private void InitializeDrawerButtons()
+        {
+            foreach (Control control in drawerPanel.Controls)
+            {
+                if (control is Button button && button.Name.StartsWith("btn"))
+                {
+                    drawerButtons.Add(button);
+                }
+            }
         }
 
         private async void btnLogout_Click(object sender, EventArgs e)
