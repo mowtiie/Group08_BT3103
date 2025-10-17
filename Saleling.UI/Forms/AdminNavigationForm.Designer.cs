@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            label2 = new Label();
-            label1 = new Label();
+            lblRole = new Label();
+            lblName = new Label();
             panel2 = new Panel();
-            button8 = new Button();
-            button7 = new Button();
-            button6 = new Button();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            btnLogout = new Button();
+            btnReports = new Button();
+            btnInventory = new Button();
+            btnSuppliers = new Button();
+            btnCategories = new Button();
+            btnProducts = new Button();
+            btnUsers = new Button();
+            btnDashboard = new Button();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -48,204 +48,212 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(0, 48, 86);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(lblRole);
+            panel1.Controls.Add(lblName);
             panel1.Location = new Point(-12, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(388, 232);
             panel1.TabIndex = 0;
             // 
-            // label2
+            // lblRole
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 14F);
-            label2.ForeColor = SystemColors.Control;
-            label2.Location = new Point(107, 123);
-            label2.Name = "label2";
-            label2.Size = new Size(158, 32);
-            label2.TabIndex = 1;
-            label2.Text = "Administrator";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
+            lblRole.AutoSize = true;
+            lblRole.Font = new Font("Segoe UI", 14F);
+            lblRole.ForeColor = SystemColors.Control;
+            lblRole.Location = new Point(107, 123);
+            lblRole.Name = "lblRole";
+            lblRole.Size = new Size(158, 32);
+            lblRole.TabIndex = 1;
+            lblRole.Text = "Administrator";
+            lblRole.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // lblName
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
-            label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(62, 72);
-            label1.Name = "label1";
-            label1.Size = new Size(262, 37);
-            label1.TabIndex = 0;
-            label1.Text = "Vrixzandro Eliponga";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
+            lblName.AutoSize = true;
+            lblName.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
+            lblName.ForeColor = SystemColors.Control;
+            lblName.Location = new Point(62, 72);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(262, 37);
+            lblName.TabIndex = 0;
+            lblName.Text = "Vrixzandro Eliponga";
+            lblName.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
             panel2.BackColor = SystemColors.Highlight;
-            panel2.Controls.Add(button8);
-            panel2.Controls.Add(button7);
-            panel2.Controls.Add(button6);
-            panel2.Controls.Add(button5);
-            panel2.Controls.Add(button4);
-            panel2.Controls.Add(button3);
-            panel2.Controls.Add(button2);
-            panel2.Controls.Add(button1);
+            panel2.Controls.Add(btnLogout);
+            panel2.Controls.Add(btnReports);
+            panel2.Controls.Add(btnInventory);
+            panel2.Controls.Add(btnSuppliers);
+            panel2.Controls.Add(btnCategories);
+            panel2.Controls.Add(btnProducts);
+            panel2.Controls.Add(btnUsers);
+            panel2.Controls.Add(btnDashboard);
             panel2.Controls.Add(panel1);
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(373, 1080);
             panel2.TabIndex = 1;
             // 
-            // button8
+            // btnLogout
             // 
-            button8.FlatAppearance.BorderSize = 0;
-            button8.FlatStyle = FlatStyle.Flat;
-            button8.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
-            button8.ForeColor = Color.White;
-            button8.Image = Properties.Resources.logout;
-            button8.ImageAlign = ContentAlignment.MiddleLeft;
-            button8.Location = new Point(0, 838);
-            button8.Name = "button8";
-            button8.Padding = new Padding(24, 0, 0, 0);
-            button8.Size = new Size(376, 89);
-            button8.TabIndex = 8;
-            button8.Text = "Logout";
-            button8.TextAlign = ContentAlignment.MiddleLeft;
-            button8.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button8.UseVisualStyleBackColor = true;
+            btnLogout.BackColor = SystemColors.Highlight;
+            btnLogout.FlatAppearance.BorderSize = 0;
+            btnLogout.FlatStyle = FlatStyle.Flat;
+            btnLogout.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
+            btnLogout.ForeColor = Color.White;
+            btnLogout.Image = Properties.Resources.logout;
+            btnLogout.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLogout.Location = new Point(0, 845);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Padding = new Padding(16, 0, 0, 0);
+            btnLogout.Size = new Size(376, 89);
+            btnLogout.TabIndex = 8;
+            btnLogout.Text = " Logout";
+            btnLogout.TextAlign = ContentAlignment.MiddleLeft;
+            btnLogout.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnLogout.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btnReports
             // 
-            button7.FlatAppearance.BorderSize = 0;
-            button7.FlatStyle = FlatStyle.Flat;
-            button7.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
-            button7.ForeColor = Color.White;
-            button7.Image = Properties.Resources.report;
-            button7.ImageAlign = ContentAlignment.MiddleLeft;
-            button7.Location = new Point(-3, 755);
-            button7.Name = "button7";
-            button7.Padding = new Padding(24, 0, 0, 0);
-            button7.Size = new Size(376, 89);
-            button7.TabIndex = 7;
-            button7.Text = "Reports";
-            button7.TextAlign = ContentAlignment.MiddleLeft;
-            button7.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button7.UseVisualStyleBackColor = true;
+            btnReports.BackColor = SystemColors.Highlight;
+            btnReports.FlatAppearance.BorderSize = 0;
+            btnReports.FlatStyle = FlatStyle.Flat;
+            btnReports.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
+            btnReports.ForeColor = Color.White;
+            btnReports.Image = Properties.Resources.report;
+            btnReports.ImageAlign = ContentAlignment.MiddleLeft;
+            btnReports.Location = new Point(0, 756);
+            btnReports.Name = "btnReports";
+            btnReports.Padding = new Padding(16, 0, 0, 0);
+            btnReports.Size = new Size(376, 89);
+            btnReports.TabIndex = 7;
+            btnReports.Text = " Reports";
+            btnReports.TextAlign = ContentAlignment.MiddleLeft;
+            btnReports.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnReports.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnInventory
             // 
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
-            button6.ForeColor = Color.White;
-            button6.Image = Properties.Resources.inventory;
-            button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(-3, 670);
-            button6.Name = "button6";
-            button6.Padding = new Padding(24, 0, 0, 0);
-            button6.Size = new Size(376, 89);
-            button6.TabIndex = 6;
-            button6.Text = "Inventory";
-            button6.TextAlign = ContentAlignment.MiddleLeft;
-            button6.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button6.UseVisualStyleBackColor = true;
+            btnInventory.BackColor = SystemColors.Highlight;
+            btnInventory.FlatAppearance.BorderSize = 0;
+            btnInventory.FlatStyle = FlatStyle.Flat;
+            btnInventory.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
+            btnInventory.ForeColor = Color.White;
+            btnInventory.Image = Properties.Resources.inventory;
+            btnInventory.ImageAlign = ContentAlignment.MiddleLeft;
+            btnInventory.Location = new Point(0, 668);
+            btnInventory.Name = "btnInventory";
+            btnInventory.Padding = new Padding(16, 0, 0, 0);
+            btnInventory.Size = new Size(376, 89);
+            btnInventory.TabIndex = 6;
+            btnInventory.Text = " Inventory";
+            btnInventory.TextAlign = ContentAlignment.MiddleLeft;
+            btnInventory.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnInventory.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnSuppliers
             // 
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
-            button5.ForeColor = Color.White;
-            button5.Image = Properties.Resources.supplier;
-            button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(-3, 591);
-            button5.Name = "button5";
-            button5.Padding = new Padding(24, 0, 0, 0);
-            button5.Size = new Size(376, 89);
-            button5.TabIndex = 5;
-            button5.Text = "Suppliers";
-            button5.TextAlign = ContentAlignment.MiddleLeft;
-            button5.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button5.UseVisualStyleBackColor = true;
+            btnSuppliers.BackColor = SystemColors.Highlight;
+            btnSuppliers.FlatAppearance.BorderSize = 0;
+            btnSuppliers.FlatStyle = FlatStyle.Flat;
+            btnSuppliers.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
+            btnSuppliers.ForeColor = Color.White;
+            btnSuppliers.Image = Properties.Resources.supplier;
+            btnSuppliers.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSuppliers.Location = new Point(0, 581);
+            btnSuppliers.Name = "btnSuppliers";
+            btnSuppliers.Padding = new Padding(16, 0, 0, 0);
+            btnSuppliers.Size = new Size(376, 89);
+            btnSuppliers.TabIndex = 5;
+            btnSuppliers.Text = " Suppliers";
+            btnSuppliers.TextAlign = ContentAlignment.MiddleLeft;
+            btnSuppliers.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnSuppliers.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnCategories
             // 
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
-            button4.ForeColor = Color.White;
-            button4.Image = Properties.Resources.category;
-            button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(-2, 496);
-            button4.Name = "button4";
-            button4.Padding = new Padding(24, 0, 0, 0);
-            button4.Size = new Size(376, 89);
-            button4.TabIndex = 4;
-            button4.Text = "Categories";
-            button4.TextAlign = ContentAlignment.MiddleLeft;
-            button4.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button4.UseVisualStyleBackColor = true;
+            btnCategories.BackColor = SystemColors.Highlight;
+            btnCategories.FlatAppearance.BorderSize = 0;
+            btnCategories.FlatStyle = FlatStyle.Flat;
+            btnCategories.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
+            btnCategories.ForeColor = Color.White;
+            btnCategories.Image = Properties.Resources.category;
+            btnCategories.ImageAlign = ContentAlignment.MiddleLeft;
+            btnCategories.Location = new Point(0, 408);
+            btnCategories.Name = "btnCategories";
+            btnCategories.Padding = new Padding(16, 0, 0, 0);
+            btnCategories.Size = new Size(376, 89);
+            btnCategories.TabIndex = 4;
+            btnCategories.Text = " Categories";
+            btnCategories.TextAlign = ContentAlignment.MiddleLeft;
+            btnCategories.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnCategories.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnProducts
             // 
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
-            button3.ForeColor = Color.White;
-            button3.Image = Properties.Resources.product;
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(0, 394);
-            button3.Name = "button3";
-            button3.Padding = new Padding(24, 0, 0, 0);
-            button3.Size = new Size(376, 89);
-            button3.TabIndex = 3;
-            button3.Text = "Products";
-            button3.TextAlign = ContentAlignment.MiddleLeft;
-            button3.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button3.UseVisualStyleBackColor = true;
+            btnProducts.BackColor = SystemColors.Highlight;
+            btnProducts.FlatAppearance.BorderSize = 0;
+            btnProducts.FlatStyle = FlatStyle.Flat;
+            btnProducts.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
+            btnProducts.ForeColor = Color.White;
+            btnProducts.Image = Properties.Resources.product;
+            btnProducts.ImageAlign = ContentAlignment.MiddleLeft;
+            btnProducts.Location = new Point(0, 497);
+            btnProducts.Name = "btnProducts";
+            btnProducts.Padding = new Padding(16, 0, 0, 0);
+            btnProducts.Size = new Size(376, 89);
+            btnProducts.TabIndex = 3;
+            btnProducts.Text = " Products";
+            btnProducts.TextAlign = ContentAlignment.MiddleLeft;
+            btnProducts.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnProducts.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnUsers
             // 
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
-            button2.ForeColor = Color.White;
-            button2.Image = Properties.Resources.users;
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(0, 318);
-            button2.Name = "button2";
-            button2.Padding = new Padding(24, 0, 0, 0);
-            button2.Size = new Size(376, 89);
-            button2.TabIndex = 2;
-            button2.Text = "Users";
-            button2.TextAlign = ContentAlignment.MiddleLeft;
-            button2.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button2.UseVisualStyleBackColor = true;
+            btnUsers.BackColor = SystemColors.Highlight;
+            btnUsers.FlatAppearance.BorderSize = 0;
+            btnUsers.FlatStyle = FlatStyle.Flat;
+            btnUsers.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
+            btnUsers.ForeColor = Color.White;
+            btnUsers.Image = Properties.Resources.users;
+            btnUsers.ImageAlign = ContentAlignment.MiddleLeft;
+            btnUsers.Location = new Point(0, 319);
+            btnUsers.Name = "btnUsers";
+            btnUsers.Padding = new Padding(16, 0, 0, 0);
+            btnUsers.Size = new Size(376, 89);
+            btnUsers.TabIndex = 2;
+            btnUsers.Text = " Users";
+            btnUsers.TextAlign = ContentAlignment.MiddleLeft;
+            btnUsers.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnUsers.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnDashboard
             // 
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
-            button1.ForeColor = Color.White;
-            button1.Image = Properties.Resources.dashboard;
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(0, 223);
-            button1.Name = "button1";
-            button1.Padding = new Padding(24, 0, 0, 0);
-            button1.Size = new Size(376, 89);
-            button1.TabIndex = 1;
-            button1.Text = "Dashboard";
-            button1.TextAlign = ContentAlignment.MiddleLeft;
-            button1.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button1.UseVisualStyleBackColor = true;
+            btnDashboard.BackColor = SystemColors.Highlight;
+            btnDashboard.FlatAppearance.BorderSize = 0;
+            btnDashboard.FlatStyle = FlatStyle.Flat;
+            btnDashboard.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
+            btnDashboard.ForeColor = Color.White;
+            btnDashboard.Image = Properties.Resources.dashboard;
+            btnDashboard.ImageAlign = ContentAlignment.MiddleLeft;
+            btnDashboard.Location = new Point(0, 232);
+            btnDashboard.Name = "btnDashboard";
+            btnDashboard.Padding = new Padding(16, 0, 0, 0);
+            btnDashboard.Size = new Size(376, 89);
+            btnDashboard.TabIndex = 1;
+            btnDashboard.Text = " Dashboard";
+            btnDashboard.TextAlign = ContentAlignment.MiddleLeft;
+            btnDashboard.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnDashboard.UseVisualStyleBackColor = false;
             // 
             // AdminNavigationForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1529, 1033);
+            ClientSize = new Size(1920, 1080);
             Controls.Add(panel2);
             ForeColor = SystemColors.ButtonShadow;
             FormBorderStyle = FormBorderStyle.None;
@@ -262,16 +270,16 @@
 
         private Panel panel1;
         private Panel panel2;
-        private Label label1;
+        private Label lblName;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private Label label2;
-        private Button button1;
-        private Button button7;
-        private Button button6;
-        private Button button5;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button8;
+        private Label lblRole;
+        private Button btnDashboard;
+        private Button btnReports;
+        private Button btnInventory;
+        private Button btnSuppliers;
+        private Button btnCategories;
+        private Button btnProducts;
+        private Button btnUsers;
+        private Button btnLogout;
     }
 }
