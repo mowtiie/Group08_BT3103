@@ -135,6 +135,7 @@
             btnReports.TextAlign = ContentAlignment.MiddleLeft;
             btnReports.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnReports.UseVisualStyleBackColor = false;
+            btnReports.Click += btnReports_Click;
             // 
             // btnInventory
             // 
@@ -154,6 +155,7 @@
             btnInventory.TextAlign = ContentAlignment.MiddleLeft;
             btnInventory.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnInventory.UseVisualStyleBackColor = false;
+            btnInventory.Click += btnInventory_Click;
             // 
             // btnSuppliers
             // 
@@ -173,6 +175,7 @@
             btnSuppliers.TextAlign = ContentAlignment.MiddleLeft;
             btnSuppliers.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnSuppliers.UseVisualStyleBackColor = false;
+            btnSuppliers.Click += btnSuppliers_Click;
             // 
             // btnCategories
             // 
@@ -192,6 +195,7 @@
             btnCategories.TextAlign = ContentAlignment.MiddleLeft;
             btnCategories.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnCategories.UseVisualStyleBackColor = false;
+            btnCategories.Click += btnCategories_Click;
             // 
             // btnProducts
             // 
@@ -211,6 +215,7 @@
             btnProducts.TextAlign = ContentAlignment.MiddleLeft;
             btnProducts.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnProducts.UseVisualStyleBackColor = false;
+            btnProducts.Click += btnProducts_Click;
             // 
             // btnUsers
             // 
@@ -230,6 +235,7 @@
             btnUsers.TextAlign = ContentAlignment.MiddleLeft;
             btnUsers.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnUsers.UseVisualStyleBackColor = false;
+            btnUsers.Click += btnUsers_Click;
             // 
             // btnDashboard
             // 
@@ -249,6 +255,7 @@
             btnDashboard.TextAlign = ContentAlignment.MiddleLeft;
             btnDashboard.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnDashboard.UseVisualStyleBackColor = false;
+            btnDashboard.Click += btnDashboard_Click;
             // 
             // contentPanel
             // 

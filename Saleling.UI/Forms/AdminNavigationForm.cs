@@ -1,4 +1,5 @@
 ﻿using Saleling.Model;
+using Saleling.UI.UserControls;
 using Saleling.Util;
 
 namespace Saleling.UI
@@ -93,6 +94,47 @@ namespace Saleling.UI
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
+        }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            HighlightDrawerButton(sender);
+            LoadScreen(new UserManagementScreen());
+        }
+
+        private void btnCategories_Click(object sender, EventArgs e)
+        {
+            HighlightDrawerButton(sender);
+            LoadScreen(new CategoryManagementScreen());
+        }
+
+        private void btnProducts_Click(object sender, EventArgs e)
+        {
+            HighlightDrawerButton(sender);
+            LoadScreen(new ProductMaintenanceScreen());
+        }
+
+        private void btnSuppliers_Click(object sender, EventArgs e)
+        {
+            HighlightDrawerButton(sender);
+            LoadScreen(new SupplierManagementScreen());
+        }
+
+        private void btnInventory_Click(object sender, EventArgs e)
+        {
+            HighlightDrawerButton(sender);
+            LoadScreen(new InventoryManagementScreen());
+        }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            HighlightDrawerButton(sender);
+            LoadScreen(new ReportsManagementScreen());
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            LoadDashboardScreen();
         }
     }
 }
