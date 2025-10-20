@@ -101,5 +101,5 @@ This project was developed by the following students:
 
 | Role | Username | Password |
 | :--- | :--- | :--- |
-| **Admin** | `sysadmin` | `sysadminpass` |
-| **Cashier** | `john.doe` | `123456789` |
+| **Admin** | `sysadmin` | `lining6duchess9dullness3velvet` |
+| **Cashier** | `john.doe` | `polo7nemeses6freebie8quote` |
