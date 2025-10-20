@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Saleling.UI
+namespace Saleling.UI.UserControls
 {
-    public partial class AdminDashboard_2_ : UserControl
+    public partial class SupplierManagementScreen : UserControl
     {
-        public AdminDashboard_2_()
+        public SupplierManagementScreen()
         {
             InitializeComponent();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

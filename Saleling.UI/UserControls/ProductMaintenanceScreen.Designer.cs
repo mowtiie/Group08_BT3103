@@ -1,6 +1,6 @@
 ﻿namespace Saleling.UI
 {
-    partial class ProductMaintenance
+    partial class ProductMaintenanceScreen
     {
         /// <summary> 
         /// Required designer variable.

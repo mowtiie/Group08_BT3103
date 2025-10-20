@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Saleling.UI
+namespace Saleling.UI.UserControls
 {
-    public partial class AdminNavigationForm : Form
+    public partial class UserManagementScreen : UserControl
     {
-        public AdminNavigationForm()
+        public UserManagementScreen()
         {
             InitializeComponent();
         }
