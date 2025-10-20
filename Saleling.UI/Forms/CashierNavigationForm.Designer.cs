@@ -40,6 +40,7 @@
             panel1 = new Panel();
             lblRole = new Label();
             lblName = new Label();
+            contentPanel = new Panel();
             drawerPanel.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -80,6 +81,7 @@
             btnLogout.TextAlign = ContentAlignment.MiddleLeft;
             btnLogout.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnLogout.UseVisualStyleBackColor = false;
+            btnLogout.Click += btnLogout_Click;
             // 
             // btnReports
             // 
@@ -99,6 +101,7 @@
             btnReports.TextAlign = ContentAlignment.MiddleLeft;
             btnReports.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnReports.UseVisualStyleBackColor = false;
+            btnReports.Click += btnReports_Click;
             // 
             // btnInventory
             // 
@@ -118,6 +121,7 @@
             btnInventory.TextAlign = ContentAlignment.MiddleLeft;
             btnInventory.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnInventory.UseVisualStyleBackColor = false;
+            btnInventory.Click += btnInventory_Click;
             // 
             // btnSuppliers
             // 
@@ -137,6 +141,7 @@
             btnSuppliers.TextAlign = ContentAlignment.MiddleLeft;
             btnSuppliers.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnSuppliers.UseVisualStyleBackColor = false;
+            btnSuppliers.Click += btnSuppliers_Click;
             // 
             // btnCategories
             // 
@@ -156,6 +161,7 @@
             btnCategories.TextAlign = ContentAlignment.MiddleLeft;
             btnCategories.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnCategories.UseVisualStyleBackColor = false;
+            btnCategories.Click += btnCategories_Click;
             // 
             // btnProducts
             // 
@@ -175,6 +181,7 @@
             btnProducts.TextAlign = ContentAlignment.MiddleLeft;
             btnProducts.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnProducts.UseVisualStyleBackColor = false;
+            btnProducts.Click += btnProducts_Click;
             // 
             // btnPos
             // 
@@ -194,6 +201,7 @@
             btnPos.TextAlign = ContentAlignment.MiddleLeft;
             btnPos.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnPos.UseVisualStyleBackColor = false;
+            btnPos.Click += btnPos_Click;
             // 
             // btnDashboard
             // 
@@ -213,6 +221,7 @@
             btnDashboard.TextAlign = ContentAlignment.MiddleLeft;
             btnDashboard.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnDashboard.UseVisualStyleBackColor = false;
+            btnDashboard.Click += btnDashboard_Click;
             // 
             // panel1
             // 
@@ -246,17 +255,27 @@
             lblName.Text = "John Doe";
             lblName.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // contentPanel
+            // 
+            contentPanel.Dock = DockStyle.Fill;
+            contentPanel.Location = new Point(373, 0);
+            contentPanel.Name = "contentPanel";
+            contentPanel.Size = new Size(1547, 1080);
+            contentPanel.TabIndex = 3;
+            // 
             // CashierNavigationForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(contentPanel);
             Controls.Add(drawerPanel);
             FormBorderStyle = FormBorderStyle.None;
             Location = new Point(373, 0);
             Name = "CashierNavigationForm";
             Text = "CashierNavigation";
+            Load += CashierNavigationForm_Load;
             drawerPanel.ResumeLayout(false);
             panel1.ResumeLayout(false);
             ResumeLayout(false);
@@ -276,5 +295,6 @@
         private Panel panel1;
         private Label lblRole;
         private Label lblName;
+        private Panel contentPanel;
     }
 }
