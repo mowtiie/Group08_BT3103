@@ -69,7 +69,7 @@ This project was developed by the following students:
 
 | Role | Name | Email |
 | :--- | :--- | :--- |
-| **Professor** | Ervin Abiad | N/A |
+| **Professor** | Ervin Abiad | ervin.abiad@gmail.com |
 
 ---
 
