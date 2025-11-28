@@ -1,6 +1,4 @@
-﻿USE SalelingDB;
-GO
-
+﻿DECLARE @SystemAdminID INT = 1;
 IF NOT EXISTS (SELECT 1 FROM Users WHERE Username = 'sysadmin')
 BEGIN
     INSERT INTO Users (FirstName, LastName, Username, HashedPassword, Role)
@@ -15,12 +13,11 @@ BEGIN
     PRINT 'User table already contains data. Skipping initial user data insertion.';
 END
 
-DECLARE @SystemAdminID INT = 1;
-
 SET IDENTITY_INSERT Categories ON;
-IF NOT EXISTS (SELECT 1 FROM Categories WHERE CategoryID = 5)
+IF NOT EXISTS (SELECT 1 FROM Categories WHERE CategoryID = 3)
 BEGIN
     DELETE FROM Categories; 
+    DBCC CHECKIDENT ('Categories', RESEED, 0);
     
     INSERT INTO Categories (CategoryID, CategoryName, Description) VALUES
     (1, 'T-Shirts & Polos', 'Casual tops for everyday wear.'),
@@ -36,6 +33,7 @@ SET IDENTITY_INSERT Suppliers ON;
 IF NOT EXISTS (SELECT 1 FROM Suppliers WHERE SupplierID = 5)
 BEGIN
     DELETE FROM Suppliers;
+    DBCC CHECKIDENT ('Suppliers', RESEED, 0);
     
     INSERT INTO Suppliers (SupplierID, SupplierName, ContactName, Address, Phone) VALUES
     (1, 'Prime Textile Co.', 'Alex Johnson', '405 West St, LA', '555-1001'),
@@ -63,25 +61,15 @@ BEGIN
     PRINT 'Dedicated "Walk-In Customer" record already exists. ID: ' + CAST(@WalkInCustomerID AS VARCHAR);
 END
 GO
+
 DECLARE @WalkInCustomerID INT;
 SELECT @WalkInCustomerID = CustomerID FROM Customers WHERE FirstName = 'Walk-In' AND LastName = 'Customer';
 
 PRINT 'Seeding 100 Products, 500 Variants, and Initial Inventory...';
 
-IF EXISTS (SELECT 1 FROM Products)
-BEGIN
-    PRINT 'Cleaning up existing product, variant, sales, and inventory data before re-seeding...';
-    DELETE FROM SalesItems;
-    DELETE FROM Inventory;
-    DELETE FROM Sales;
-    DELETE FROM ProductVariants;
-    DELETE FROM Products;
-END
-
 DECLARE @Counter INT = 1;
 DECLARE @MaxRecords INT = 100;
 DECLARE @MinCategoryID INT = 1;
--- MaxCategoryID updated to 3
 DECLARE @MaxCategoryID INT = 3; 
 DECLARE @MinSupplierID INT = 1;
 DECLARE @MaxSupplierID INT = 5;
@@ -108,8 +96,8 @@ BEGIN
     DECLARE @RandomCategory INT = (SELECT FLOOR(RAND() * (@MaxCategoryID - @MinCategoryID + 1)) + @MinCategoryID);
     DECLARE @RandomSupplier INT = (SELECT FLOOR(RAND() * (@MaxSupplierID - @MinSupplierID + 1)) + @MinSupplierID);
     
-    DECLARE @BaseCost DECIMAL(12, 4) = ROUND(RAND() * 25.00 + 15.00, 4); 
-    DECLARE @BaseSellingPrice DECIMAL(12, 4) = ROUND(@BaseCost * 1.65, 4); 
+    DECLARE @BaseCost DECIMAL(12, 2) = ROUND(RAND() * 25.00 + 15.00, 2); 
+    DECLARE @BaseSellingPrice DECIMAL(12, 2) = ROUND(@BaseCost * 1.65, 2); 
     
     DECLARE @NameTemplate VARCHAR(100);
     SELECT TOP 1 @NameTemplate = NameTemplate 
@@ -126,13 +114,13 @@ BEGIN
     SET @NewProductID = SCOPE_IDENTITY();
 
     
-    DECLARE @VariantCombinations TABLE (SizeName VARCHAR(20), ColorName VARCHAR(50), Suffix CHAR(1));
+    DECLARE @VariantCombinations TABLE (SizeName VARCHAR(20), ColorName VARCHAR(50), VariantIndex INT);
 
-    INSERT INTO @VariantCombinations (SizeName, ColorName, Suffix)
+    INSERT INTO @VariantCombinations (SizeName, ColorName, VariantIndex)
     SELECT TOP (@VariantsPerProduct) 
         s.SizeName, 
         c.ColorName, 
-        CHAR(ASCII('A') + ROW_NUMBER() OVER (ORDER BY s.SizeName, c.ColorName) - 1) AS Suffix
+        ROW_NUMBER() OVER (ORDER BY NEWID()) AS VariantIndex
     FROM @Sizes s
     CROSS JOIN @Colors c
     ORDER BY NEWID();
@@ -140,30 +128,30 @@ BEGIN
     
     DECLARE @CurrentSize VARCHAR(20);
     DECLARE @CurrentColor VARCHAR(50);
-    DECLARE @CurrentSuffix CHAR(1);
+    DECLARE @CurrentVariantIndex INT;
     DECLARE @NewSKU VARCHAR(100);
     DECLARE @NewVariantID INT;
 
-    DECLARE @VariantCost DECIMAL(12, 4);
-    DECLARE @VariantSellingPrice DECIMAL(12, 4);
+    DECLARE @VariantCost DECIMAL(12, 2);
+    DECLARE @VariantSellingPrice DECIMAL(12, 2);
 
     DECLARE VariantCursor CURSOR FOR 
-    SELECT SizeName, ColorName, Suffix FROM @VariantCombinations;
+    SELECT SizeName, ColorName, VariantIndex FROM @VariantCombinations;
     
     OPEN VariantCursor;
-    FETCH NEXT FROM VariantCursor INTO @CurrentSize, @CurrentColor, @CurrentSuffix;
+    FETCH NEXT FROM VariantCursor INTO @CurrentSize, @CurrentColor, @CurrentVariantIndex;
 
     WHILE @@FETCH_STATUS = 0
     BEGIN
-        SET @NewSKU = LEFT(REPLACE(@NameTemplate, ' ', ''), 4) + '-' + @CurrentSuffix + '-' + CAST(@NewProductID AS VARCHAR);
+        SET @NewSKU = 'P' + CAST(@NewProductID AS VARCHAR) + '-' + CAST(@CurrentVariantIndex AS VARCHAR);
 
         SET @VariantCost = @BaseCost;
         SET @VariantSellingPrice = @BaseSellingPrice;
 
         IF @CurrentSize = 'XXL' OR @CurrentSize = 'XL'
         BEGIN
-            SET @VariantCost = ROUND(@BaseCost * 1.10, 4);
-            SET @VariantSellingPrice = ROUND(@BaseSellingPrice * 1.15, 4);
+            SET @VariantCost = ROUND(@BaseCost * 1.10, 2);
+            SET @VariantSellingPrice = ROUND(@BaseSellingPrice * 1.15, 2);
         END
 
         INSERT INTO ProductVariants (ProductID, SKU, Size, Color, CostPrice, SellingPrice, StockQuantity, ReorderLevel, Status)
@@ -174,7 +162,7 @@ BEGIN
         INSERT INTO Inventory (VariantID, QuantityChange, Reason, ProcessedByUserID, Notes)
         VALUES (@NewVariantID, 50, 'Initial Receipt', @AdminUserID, 'Initial seed stock.');
 
-        FETCH NEXT FROM VariantCursor INTO @CurrentSize, @CurrentColor, @CurrentSuffix;
+        FETCH NEXT FROM VariantCursor INTO @CurrentSize, @CurrentColor, @CurrentVariantIndex;
     END
 
     CLOSE VariantCursor;

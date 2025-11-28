@@ -1,4 +1,4 @@
-CREATE PROCEDURE sp_AddProduct
+ï»¿CREATE PROCEDURE sp_AddProduct
     @ProductName VARCHAR(100),
     @Category VARCHAR(50),
     @Supplier VARCHAR(50) = NULL,
@@ -24,20 +24,20 @@ BEGIN
         SELECT @CategoryID = CategoryID FROM Categories WHERE CategoryName = @Category
         IF @CategoryID IS NULL
         BEGIN
-            RAISERROR('Invalid Category Name provided. Product creation failed.', 16, 1);
-            RETURN;
-        END
+Â  Â  Â  Â      RAISERROR('Invalid Category Name provided. Product creation failed.', 16, 1);
+Â  Â  Â  Â      RETURN;
+Â  Â      END
 
         IF @Supplier IS NOT NULL AND LTRIM(@Supplier) <> '' AND @Supplier <> 'No Assigned Supplier'
-        BEGIN
-            SELECT @SupplierID = SupplierID FROM Suppliers WHERE SupplierName = @Supplier;
+Â  Â      BEGIN
+Â  Â  Â  Â      SELECT @SupplierID = SupplierID FROM Suppliers WHERE SupplierName = @Supplier;
 
-            IF @SupplierID IS NULL
-            BEGIN
-                RAISERROR('Invalid Supplier Name provided. Product creation failed.', 16, 1);
-                RETURN;
-            END
-        END
+Â  Â  Â  Â      IF @SupplierID IS NULL
+Â  Â  Â  Â      BEGIN
+Â  Â  Â  Â  Â  Â      RAISERROR('Invalid Supplier Name provided. Product creation failed.', 16, 1);
+Â  Â  Â  Â  Â  Â      RETURN;
+Â  Â  Â  Â      END
+Â  Â      END
 
         INSERT INTO Products (ProductName, CategoryID, SupplierID, Status)
         VALUES (@ProductName, @CategoryID, @SupplierID, @Status);

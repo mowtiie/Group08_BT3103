@@ -70,11 +70,9 @@
     <Build Include="Tables\Users.sql" />
     <Build Include="Tables\Suppliers.sql" />
     <Build Include="Tables\Categories.sql" />
-    <Build Include="StoredProcedures\sp_AddProduct.sql" />
     <Build Include="StoredProcedures\sp_AddProductVariant.sql" />
     <Build Include="StoredProcedures\sp_DeleteProduct.sql" />
     <Build Include="StoredProcedures\sp_DeleteProductVariant.sql" />
-    <Build Include="StoredProcedures\sp_EditProduct.sql" />
     <Build Include="StoredProcedures\sp_EditProductVariant.sql" />
     <Build Include="StoredProcedures\sp_GenerateInventoryMovementReport.sql" />
     <Build Include="StoredProcedures\sp_GenerateInventoryStockReport.sql" />
@@ -104,6 +102,8 @@
     <Build Include="Tables\Sales.sql" />
     <Build Include="Tables\SalesItems.sql" />
     <Build Include="Tables\Inventory.sql" />
+    <Build Include="StoredProcedures\sp_AddProduct.sql" />
+    <Build Include="StoredProcedures\sp_EditProduct.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Saleling.DB.refactorlog" />
