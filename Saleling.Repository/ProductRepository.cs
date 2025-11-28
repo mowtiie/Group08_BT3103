@@ -1,4 +1,5 @@
-﻿using Saleling.Util;
+﻿using Saleling.Model.Product;
+using Saleling.Util;
 using System.Data;
 using System.Data.SqlClient;
 
