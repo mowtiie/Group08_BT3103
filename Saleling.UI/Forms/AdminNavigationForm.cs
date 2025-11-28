@@ -5,30 +5,29 @@ namespace Saleling.UI
 {
     public partial class AdminNavigationForm : Form
     {
-        private UserModel currentLoggedInUser;
-        private readonly List<Button> drawerButtons;
+        private UserModel _currentUser;
+        private List<Button> drawerButtons;
 
-        private readonly Color defaultDrawerButtonColor;
-        private readonly Color highlightedDrawerButtonColor;
+        private Color _defaultButtonBackColor;
+        private Color _pressedButtonBackColor;
 
         public AdminNavigationForm()
         {
             InitializeComponent();
 
-            this.defaultDrawerButtonColor = SystemColors.Highlight;
-            this.highlightedDrawerButtonColor = Color.FromArgb(0, 77, 138);
+            drawerButtons = new List<Button>();
+            _defaultButtonBackColor = SystemColors.Highlight;
+            _pressedButtonBackColor = Color.FromArgb(0, 77, 138);
+            _currentUser = SessionUtil.Instance.CurrentUser;
 
-            this.drawerButtons = new List<Button>();
-            this.currentLoggedInUser = SessionUtil.Instance.CurrentUser;
+            lblRole.Text = _currentUser.Role;
+            lblUsername.Text = _currentUser.FullName;
 
             InitializeDrawerButtons();
         }
 
-        private async void AdminNavigationForm_Load(object sender, EventArgs e)
+        private void AdminDashboard_Load(object sender, EventArgs e)
         {
-            await LoggerUtil.Instance.LogInfoAsync($"{currentLoggedInUser.Username} has logged in.");
-            lblName.Text = $"{currentLoggedInUser.FirstName} {currentLoggedInUser.LastName}";
-            lblRole.Text = currentLoggedInUser.Role;
             LoadDashboardScreen();
         }
 
@@ -46,7 +45,7 @@ namespace Saleling.UI
         private void LoadDashboardScreen()
         {
             HighlightDrawerButton(btnDashboard);
-            LoadScreen(new AdminDashboardScreen());
+            LoadScreen(new AdminDashboardControls());
         }
 
         private void LoadScreen(UserControl screen)
@@ -68,11 +67,11 @@ namespace Saleling.UI
             {
                 if (button == clickedButton)
                 {
-                    button.BackColor = highlightedDrawerButtonColor;
+                    button.BackColor = _pressedButtonBackColor;
                 }
                 else
                 {
-                    button.BackColor = defaultDrawerButtonColor;
+                    button.BackColor = _defaultButtonBackColor;
                 }
             }
         }
@@ -87,12 +86,17 @@ namespace Saleling.UI
 
             if (logoutResult == DialogResult.Yes)
             {
-                await LoggerUtil.Instance.LogInfoAsync("User has logged out.");
+                await LoggerUtil.Instance.LogInfoAsync($"{_currentUser.Username} has logged out.");
                 SessionUtil.Instance.Logout();
 
-                this.DialogResult = DialogResult.OK;
-                this.Close();
+                DialogResult = DialogResult.OK;
+                Close();
             }
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            LoadDashboardScreen();
         }
 
         private void btnProducts_Click(object sender, EventArgs e)
@@ -111,11 +115,6 @@ namespace Saleling.UI
         {
             HighlightDrawerButton(sender);
             LoadScreen(new ReportsManagementControls());
-        }
-
-        private void btnDashboard_Click(object sender, EventArgs e)
-        {
-            LoadDashboardScreen();
         }
     }
 }
