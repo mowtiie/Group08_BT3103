@@ -1,4 +1,5 @@
 ﻿using Saleling.Model;
+using Saleling.Util;
 using System.Drawing.Printing;
 
 namespace Saleling.UI

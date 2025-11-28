@@ -1,6 +1,6 @@
 ﻿namespace Saleling.Model.Sale
 {
-    public class SaleCartModel
+    public class SalesCartModel
     {
         public int VariantID { get; set; }
         public required string ProductName { get; set; }

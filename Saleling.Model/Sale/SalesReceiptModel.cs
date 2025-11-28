@@ -1,6 +1,6 @@
 ﻿namespace Saleling.Model.Sale
 {
-    public class SaleReceiptModel
+    public class SalesReceiptModel
     {
         public int SaleId { get; set; }
         public List<SalesCartModel> Items { get; set; }
