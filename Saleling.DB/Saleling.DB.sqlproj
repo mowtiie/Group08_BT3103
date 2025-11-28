@@ -59,6 +59,7 @@
     <Folder Include="Scripts" />
     <Folder Include="Tables" />
     <Folder Include="StoredProcedures" />
+    <Folder Include="Types" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment.sql" />
@@ -98,6 +99,11 @@
     <Build Include="StoredProcedures\sp_SearchProductListing.sql" />
     <Build Include="StoredProcedures\sp_SearchProducts.sql" />
     <Build Include="StoredProcedures\sp_SearchSaleableProducts.sql" />
+    <Build Include="Types\udt_SaleItemType.sql" />
+    <Build Include="Tables\Customers.sql" />
+    <Build Include="Tables\Sales.sql" />
+    <Build Include="Tables\SalesItems.sql" />
+    <Build Include="Tables\Inventory.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Saleling.DB.refactorlog" />

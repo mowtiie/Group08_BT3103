@@ -1,9 +1,8 @@
-﻿CREATE TABLE [dbo].[Users]
-(
-	[UserID] INT PRIMARY KEY IDENTITY(1,1),
-    [FirstName] VARCHAR(100) NOT NULL,
-    [LastName] VARCHAR(100) NOT NULL,
-    [Username] VARCHAR(100) NOT NULL,
-    [HashedPassword] VARCHAR(100) NOT NULL,
-    [Role] VARCHAR(10) NOT NULL
-)
+﻿CREATE TABLE Users (
+    UserID INT PRIMARY KEY IDENTITY(1,1),
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    Username VARCHAR(50) UNIQUE NOT NULL,
+    HashedPassword VARCHAR(255) NOT NULL,
+    Role VARCHAR(10) NOT NULL
+);
