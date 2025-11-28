@@ -1,5 +1,4 @@
 ﻿using Saleling.Model;
-using Saleling.UI.UserControls;
 using Saleling.Util;
 
 namespace Saleling.UI
@@ -111,7 +110,7 @@ namespace Saleling.UI
         private void btnReports_Click(object sender, EventArgs e)
         {
             HighlightDrawerButton(sender);
-            LoadScreen(new ReportsManagementScreen());
+            LoadScreen(new ReportsManagementControls());
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
