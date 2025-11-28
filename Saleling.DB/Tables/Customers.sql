@@ -1,0 +1,8 @@
+﻿CREATE TABLE Customers (
+    CustomerID INT PRIMARY KEY IDENTITY(1,1),
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    Phone VARCHAR(15) UNIQUE,
+    Email VARCHAR(100) UNIQUE,
+    LoyaltyPoints INT DEFAULT 0
+);
