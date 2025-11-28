@@ -18,7 +18,7 @@ namespace Saleling.Controller
             return await _userRepository.GetAllCashierAsync();
         }
 
-        public async Task<UserModel> AuthenticateUserAsync(string username, string password)
+        public async Task<UserModel> AuthenticateAsync(string username, string password)
         {
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
