@@ -86,7 +86,7 @@ namespace Saleling.UI
         private void btnPos_Click(object sender, EventArgs e)
         {
             HighlightDrawerButton(sender);
-            LoadScreen(new PointOfSaleScreen());
+            LoadScreen(new PointOfSalesControls());
         }
 
         private void btnProducts_Click(object sender, EventArgs e)
