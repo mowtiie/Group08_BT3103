@@ -101,5 +101,5 @@ This project was developed by the following students:
 
 | Role | Username | Password |
 | :--- | :--- | :--- |
-| **Admin** | `sysadmin` | `lining6duchess9dullness3velvet` |
-| **Cashier** | `john.doe` | `polo7nemeses6freebie8quote` |
+| **Admin** | `sysadmin` | `footpath1dangeravenge2` |
+| **Cashier** | `johndoe` | `buggysnow1fieldapproach2` |
