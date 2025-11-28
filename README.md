@@ -12,11 +12,10 @@ This system provides all the essential functionalities needed for retail operati
 
 | Feature Area | Description | Requirement |
 | :--- | :--- | :--- |
-| **User & Access** | Secure **Login** with role-based access. Includes **Users Management (CRUD)** **reserved for Admins** to control system access. | Login, User Role Management, Users Management |
+| **User & Access** | Secure Login with role-based access | Login, User Role Management |
 | **Dashboards** | Dedicated **Admin Dashboard** for high-level oversight and a streamlined **Cashier Dashboard** for sales operations. | Admin Dashboard, Cashier Dashboard |
 | **Product Management** | Complete **Product Maintenance (CRUD)** functionality, initialized with **50 product records**. Products can be searched efficiently by **name or category**. | Product Maintenance, Product Search |
 | **Inventory Control** | Real-time tracking of the **Number of Inventory Items**. Automated **Stock Level Alerts** notify staff when apparel stock is low. | Inventory Items, Stock Level Alerts |
-| **Sourcing & Structure** | Dedicated **Suppliers Management (CRUD)** and **Categories Management (CRUD)** screens for efficient vendor and product structure control. | Supplier Database, Category Database, Suppliers Management, Categories Management |
 | **Sales & Transactions** | Core **Cashiering/Sales** module. Every transaction is saved to the **Transaction History** for auditing. | Cashiering/Sales, Transaction History |
 | **Reporting** | Generation of detailed **Inventory and Sales Reports** based on collected sales and stock data. | Inventory & Sales Report |
 
@@ -82,15 +81,29 @@ This project was developed by the following students:
 
 ---
 
+## 📦 Required NuGet Packages
+
+The following packages must be installed in your project to handle configuration, database access, and password hashing:
+
+* **`System.Configuration.ConfigurationManager`:** Used to read the database connection string and application settings from the configuration file.
+* **`System.Data.SqlClient (4.8.6)`:** The primary provider for connecting to and interacting with the Microsoft SQL Server database.
+* **`BCrypt.Net-Next`:** Provides the implementation of the **BCrypt hashing algorithm** for securing user passwords.
+
+---
+
 ## 🚀 Setup & Execution
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/eipna/Group08_BT3103.git
+    git clone [https://github.com/eipna/Group08_BT3103.git](https://github.com/eipna/Group08_BT3103.git)
     ```
 2.  **Database Configuration:**
-    * Set up your SQL Server database.
-    * Update the **connection string** in the application's configuration file to match your local database settings.
+    * Publish your local SQL Server database schema.
+    * The application is configured to use the following **connection string** for local development:
+      ```
+      Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Saleling.DB;Integrated Security=True
+      ```
+    * Ensure this connection string is correctly configured in your application's configuration file (e.g., `app.config`).
 3.  **Run the Project:**
     * Open the solution file (`.sln`) in Visual Studio.
     * Build the solution and run the application (F5).
@@ -103,3 +116,4 @@ This project was developed by the following students:
 | :--- | :--- | :--- |
 | **Admin** | `sysadmin` | `footpath1dangeravenge2` |
 | **Cashier** | `johndoe` | `buggysnow1fieldapproach2` |
+| **Cashier** | `janedoe` | `brown1nosemule2` |
