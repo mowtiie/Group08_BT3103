@@ -1,4 +1,6 @@
-﻿using Saleling.Model.Sale;
+﻿using Saleling.Model.Product;
+using Saleling.Model.Sale;
+using Saleling.Repository;
 using Saleling.Util;
 using System.Xml.Linq;
 
