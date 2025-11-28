@@ -98,7 +98,7 @@ namespace Saleling.UI
         private void btnProducts_Click(object sender, EventArgs e)
         {
             HighlightDrawerButton(sender);
-            LoadScreen(new ProductMaintenanceScreen());
+            LoadScreen(new ProductMaintenanceControls());
         }
 
         private void btnInventory_Click(object sender, EventArgs e)
