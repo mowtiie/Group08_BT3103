@@ -89,22 +89,10 @@ namespace Saleling.UI
             LoadScreen(new PointOfSaleScreen());
         }
 
-        private void btnCategories_Click(object sender, EventArgs e)
-        {
-            HighlightDrawerButton(sender);
-            LoadScreen(new CategoryManagementScreen());
-        }
-
         private void btnProducts_Click(object sender, EventArgs e)
         {
             HighlightDrawerButton(sender);
             LoadScreen(new ProductMaintenanceScreen());
-        }
-
-        private void btnSuppliers_Click(object sender, EventArgs e)
-        {
-            HighlightDrawerButton(sender);
-            LoadScreen(new SupplierManagementScreen());
         }
 
         private void btnInventory_Click(object sender, EventArgs e)
