@@ -2,7 +2,7 @@
 
 namespace Saleling.Util
 {
-    public class DatabaseUtil
+    public class ConfigurationUtil
     {
         private static readonly string CONNECTION_STRING_NAME = "SalelingDB";
 

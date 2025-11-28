@@ -77,7 +77,7 @@ namespace Saleling.UI
 
         private async void CashierNavigationForm_Load(object sender, EventArgs e)
         {
-            await LoggerUtil.Instance.LogAsync($"{currentLoggedInUser.Username} has logged in.");
+            await LoggerUtil.Instance.LogInfoAsync($"{currentLoggedInUser.Username} has logged in.");
             lblName.Text = $"{currentLoggedInUser.FirstName} {currentLoggedInUser.LastName}";
             lblRole.Text = currentLoggedInUser.Role;
             LoadDashboardScreen();
@@ -98,7 +98,7 @@ namespace Saleling.UI
         private void btnInventory_Click(object sender, EventArgs e)
         {
             HighlightDrawerButton(sender);
-            LoadScreen(new InventoryManagementScreen());
+            LoadScreen(new InventoryManagementControls());
         }
 
         private void btnReports_Click(object sender, EventArgs e)
@@ -117,7 +117,7 @@ namespace Saleling.UI
 
             if (logoutResult == DialogResult.Yes)
             {
-                await LoggerUtil.Instance.LogAsync("User has logged out.");
+                await LoggerUtil.Instance.LogInfoAsync("User has logged out.");
                 SessionUtil.Instance.Logout();
 
                 this.DialogResult = DialogResult.OK;

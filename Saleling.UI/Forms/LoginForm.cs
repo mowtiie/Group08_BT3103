@@ -65,19 +65,19 @@ namespace Saleling.UI
             }
             catch (Exception ex)
             {
-                await LoggerUtil.Instance.LogAsync($"Error: {ex.Message}");
+                await LoggerUtil.Instance.LogInfoAsync($"Error: {ex.Message}");
                 MessageBox.Show(ex.Message, "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private async void LoginForm_Load(object sender, EventArgs e)
         {
-            await LoggerUtil.Instance.LogAsync("Application has started.");
+            await LoggerUtil.Instance.LogInfoAsync("Application has started.");
         }
 
         private async void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            await LoggerUtil.Instance.LogAsync("Application has closed.");
+            await LoggerUtil.Instance.LogInfoAsync("Application has closed.");
         }
     }
 }
