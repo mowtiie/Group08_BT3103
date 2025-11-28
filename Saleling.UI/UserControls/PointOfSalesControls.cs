@@ -1,5 +1,7 @@
 ﻿using Saleling.Controller;
 using Saleling.Model;
+using Saleling.Model.Product;
+using Saleling.Model.Sale;
 using Saleling.Util;
 using System.Drawing.Printing;
 
