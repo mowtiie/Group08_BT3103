@@ -55,20 +55,20 @@ The project separates concerns across four distinct layers:
 
 This project was developed by the following students:
 
-| Role | Name | Email |
+| Role | Github | Email |
 | :--- | :--- | :--- |
-| **Leader** | Vrixzandro Eliponga | vrixzandro.jm8b9@slmail.me |
-| **Member** | Mark Kerwin Ballelos | markkerwinballelos@gmail.com |
-| **Member** | James Carl Villalobos | villalobosjamescarl30@gmail.com |
-| **Member** | Adrienne Jalocon | jaloconadrienne@gmail.com |
+| **Leader** | [mowtiie](https://github.com/mowtiie) | vrixzandro.jm8b9@slmail.me |
+| **Member** | [Tutsy](https://github.com/Tutsy) | markkerwinballelos@gmail.com |
+| **Member** | [villalobosjames30](https://github.com/villalobosjames30) | villalobosjamescarl30@gmail.com |
+| **Member** | [Adrienne20894](https://github.com/Adrienne20894) | jaloconadrienne@gmail.com |
 
 ---
 
 ## 🎓 Instructor / Professor
 
-| Role | Name | Email |
+| Role | Github | Email |
 | :--- | :--- | :--- |
-| **Professor** | Ervin Abiad | ervin.abiad@gmail.com |
+| **Professor** | [ErvinAbiadSTI](https://github.com/ErvinAbiadSTI) | ervin.abiad@gmail.com |
 
 ---
 
